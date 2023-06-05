@@ -1,0 +1,13 @@
+{
+    "code" : 4,
+
+    "package" : "com.exzell.androidterminal.horizonpay",
+
+    "file_name" : "horizonpay.apk",
+
+    "class_name" : "HorizonPayTerminalManager",
+
+    "has_native" : false,
+    
+    "has_keyboard" : false
+}

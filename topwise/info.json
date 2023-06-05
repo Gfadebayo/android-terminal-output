@@ -1,0 +1,13 @@
+{
+    "code" : 2,
+
+    "package" : "com.exzell.androidterminal.topwise",
+
+    "file_name" : "topwise.apk",
+
+    "class_name" : "TopwiseTerminalManager",
+
+    "has_native" : false,
+    
+    "has_keyboard" : true
+}

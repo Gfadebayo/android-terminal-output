@@ -1,0 +1,13 @@
+{
+    "code" : 1,
+
+    "package" : "com.exzell.androidterminal.aisino",
+
+    "file_name" : "aisino.apk",
+
+    "class_name" : "AisinoTerminalManager",
+
+    "has_native" : true,
+    
+    "has_keyboard" : false
+}

@@ -1,0 +1,13 @@
+{
+    "code" : 1,
+
+    "package" : "com.exzell.androidterminal.hcc",
+
+    "file_name" : "hcc.apk",
+
+    "class_name" : "HccTerminalManager",
+
+    "has_native" : true,
+    
+    "has_keyboard" : false
+}

@@ -1,0 +1,2020 @@
+# compiler: R8
+# compiler_version: 4.0.52
+# min_api: 21
+# common_typos_disable
+# {"id":"com.android.tools.r8.mapping","version":"2.1"}
+# pg_map_id: 5e71840
+# pg_map_hash: SHA-256 5e7184094f956700142e4348768d7d12b34f78e1222ad1b9d40c7d4525560bf7
+androidx.collection.ArrayMap -> a.b:
+    androidx.collection.MapCollections mCollections -> h
+    1:13:androidx.collection.MapCollections androidx.collection.ArrayMap.getCollection():0:0 -> entrySet
+    1:13:java.util.Set entrySet():0 -> entrySet
+    14:17:java.util.Set androidx.collection.MapCollections.getEntrySet():0:0 -> entrySet
+    14:17:java.util.Set entrySet():0 -> entrySet
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    18:27:java.util.Set androidx.collection.MapCollections.getEntrySet():0:0 -> entrySet
+    18:27:java.util.Set entrySet():0 -> entrySet
+    1:13:androidx.collection.MapCollections androidx.collection.ArrayMap.getCollection():0:0 -> keySet
+    1:13:java.util.Set keySet():0 -> keySet
+    14:17:java.util.Set androidx.collection.MapCollections.getKeySet():0:0 -> keySet
+    14:17:java.util.Set keySet():0 -> keySet
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    18:27:java.util.Set androidx.collection.MapCollections.getKeySet():0:0 -> keySet
+    18:27:java.util.Set keySet():0 -> keySet
+    8:43:void androidx.collection.SimpleArrayMap.ensureCapacity(int):0:0 -> putAll
+    8:43:void putAll(java.util.Map):0 -> putAll
+    44:76:void putAll(java.util.Map):0:0 -> putAll
+    77:82:void androidx.collection.SimpleArrayMap.ensureCapacity(int):0:0 -> putAll
+    77:82:void putAll(java.util.Map):0 -> putAll
+    1:13:androidx.collection.MapCollections androidx.collection.ArrayMap.getCollection():0:0 -> values
+    1:13:java.util.Collection values():0 -> values
+    14:17:java.util.Collection androidx.collection.MapCollections.getValues():0:0 -> values
+    14:17:java.util.Collection values():0 -> values
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    18:27:java.util.Collection androidx.collection.MapCollections.getValues():0:0 -> values
+    18:27:java.util.Collection values():0 -> values
+androidx.collection.ArrayMap$1 -> a.a:
+    androidx.collection.ArrayMap this$0 -> d
+    java.lang.Object colGetEntry(int,int) -> a
+    void colRemoveAt(int) -> b
+androidx.collection.ContainerHelpers -> a.c:
+    java.lang.Object[] EMPTY_OBJECTS -> b
+    int[] EMPTY_INTS -> a
+    4:10:void androidx.collection.ContainerHelpers.<clinit>():0:0 -> <clinit>
+    4:10:void a.ContainerHelpers.$r8$clinit$synthetic():0 -> <clinit>
+      # {"id":"com.android.tools.r8.synthesized"}
+    byte[] com.exzell.androidterminal.core.util.EncryptUtils.GetDUKPTKey(byte[],byte[]) -> a
+    void com.exzell.androidterminal.core.util.EncryptUtils.NRKGP(byte[],byte[]) -> b
+    9:62:boolean com.zcs.sdk.util.PowerHelper.a(java.lang.String,boolean,int[]):0:0 -> c
+    9:62:boolean com.zcs.sdk.util.PowerHelper.a(java.lang.String,int):0 -> c
+    java.lang.String com.exzell.androidterminal.core.util.ByteUtils.bytesToHex(byte[]) -> d
+    java.lang.String com.exzell.androidterminal.core.util.EncryptUtils.convertByteToHex(byte[]) -> e
+    java.lang.String com.zcs.sdk.util.StringUtils.convertBytesToHex(byte[]) -> f
+    byte[] com.exzell.androidterminal.core.util.EncryptUtils.convertHexToByte(java.lang.String) -> g
+    30:38:byte com.zcs.sdk.util.StringUtils.charToByte(char):0:0 -> h
+    30:38:byte[] com.zcs.sdk.util.StringUtils.convertHexToBytes(java.lang.String):0 -> h
+    39:40:byte[] com.zcs.sdk.util.StringUtils.convertHexToBytes(java.lang.String):0:0 -> h
+    41:47:byte com.zcs.sdk.util.StringUtils.charToByte(char):0:0 -> h
+    41:47:byte[] com.zcs.sdk.util.StringUtils.convertHexToBytes(java.lang.String):0 -> h
+    48:53:byte[] com.zcs.sdk.util.StringUtils.convertHexToBytes(java.lang.String):0:0 -> h
+    26:32:void com.exzell.androidterminal.core.util.model.EmvAid.setAid(java.lang.String):0:0 -> i
+    26:32:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0 -> i
+    33:51:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0:0 -> i
+    52:55:void com.exzell.androidterminal.core.util.model.EmvAid.setSelFlag(int):0:0 -> i
+    52:55:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0 -> i
+    56:67:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0:0 -> i
+    68:74:void com.exzell.androidterminal.core.util.model.EmvAid.setVersion(java.lang.String):0:0 -> i
+    68:74:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0 -> i
+    75:86:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0:0 -> i
+    87:93:void com.exzell.androidterminal.core.util.model.EmvAid.setTbcDefault(java.lang.String):0:0 -> i
+    87:93:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0 -> i
+    94:105:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0:0 -> i
+    106:112:void com.exzell.androidterminal.core.util.model.EmvAid.setTacOnline(java.lang.String):0:0 -> i
+    106:112:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0 -> i
+    113:124:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0:0 -> i
+    125:131:void com.exzell.androidterminal.core.util.model.EmvAid.setTacDenial(java.lang.String):0:0 -> i
+    125:131:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0 -> i
+    132:147:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0:0 -> i
+    148:151:void com.exzell.androidterminal.core.util.model.EmvAid.setFloorLimit(long):0:0 -> i
+    148:151:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0 -> i
+    152:167:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0:0 -> i
+    168:171:void com.exzell.androidterminal.core.util.model.EmvAid.setThreshold(long):0:0 -> i
+    168:171:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0 -> i
+    172:187:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0:0 -> i
+    188:191:void com.exzell.androidterminal.core.util.model.EmvAid.setMaxTargetPer(int):0:0 -> i
+    188:191:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0 -> i
+    192:207:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0:0 -> i
+    208:211:void com.exzell.androidterminal.core.util.model.EmvAid.setTargetPer(int):0:0 -> i
+    208:211:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0 -> i
+    212:223:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0:0 -> i
+    224:230:void com.exzell.androidterminal.core.util.model.EmvAid.setDdol(java.lang.String):0:0 -> i
+    224:230:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0 -> i
+    231:250:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0:0 -> i
+    251:254:void com.exzell.androidterminal.core.util.model.EmvAid.setOnlinePin(int):0:0 -> i
+    251:254:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0 -> i
+    255:266:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0:0 -> i
+    267:271:void com.exzell.androidterminal.core.util.model.EmvAid.setEccTTlValue(java.lang.String):0:0 -> i
+    267:271:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0 -> i
+    272:275:void com.exzell.androidterminal.core.util.model.EmvAid.setEccTTlFlag(int):0:0 -> i
+    272:275:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0 -> i
+    276:287:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0:0 -> i
+    288:292:void com.exzell.androidterminal.core.util.model.EmvAid.setRdContactlessFloorLimit(java.lang.String):0:0 -> i
+    288:292:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0 -> i
+    293:296:void com.exzell.androidterminal.core.util.model.EmvAid.setRdContactlessFloorLimitFlag(int):0:0 -> i
+    293:296:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0 -> i
+    297:308:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0:0 -> i
+    309:313:void com.exzell.androidterminal.core.util.model.EmvAid.setRdContactlessTransLimit(java.lang.String):0:0 -> i
+    309:313:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0 -> i
+    314:317:void com.exzell.androidterminal.core.util.model.EmvAid.setRdContactlessTransLimitFlag(int):0:0 -> i
+    314:317:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0 -> i
+    318:329:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0:0 -> i
+    330:334:void com.exzell.androidterminal.core.util.model.EmvAid.setRdCvmLimit(java.lang.String):0:0 -> i
+    330:334:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0 -> i
+    335:338:void com.exzell.androidterminal.core.util.model.EmvAid.setRdCvmLimitFlag(int):0:0 -> i
+    335:338:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0 -> i
+    339:350:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0:0 -> i
+    351:357:void com.exzell.androidterminal.core.util.model.EmvAid.setTdol(java.lang.String):0:0 -> i
+    351:357:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0 -> i
+    358:369:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0:0 -> i
+    370:376:void com.exzell.androidterminal.core.util.model.EmvAid.setRiskManagementData(java.lang.String):0:0 -> i
+    370:376:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0 -> i
+    377:388:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0:0 -> i
+    389:395:void com.exzell.androidterminal.core.util.model.EmvAid.setAcquirerID(java.lang.String):0:0 -> i
+    389:395:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0 -> i
+    396:407:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0:0 -> i
+    408:414:void com.exzell.androidterminal.core.util.model.EmvAid.setMerchantName(java.lang.String):0:0 -> i
+    408:414:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0 -> i
+    415:426:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0:0 -> i
+    427:433:void com.exzell.androidterminal.core.util.model.EmvAid.setMerchantCateCode(java.lang.String):0:0 -> i
+    427:433:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0 -> i
+    434:445:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0:0 -> i
+    446:452:void com.exzell.androidterminal.core.util.model.EmvAid.setMerchantID(java.lang.String):0:0 -> i
+    446:452:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0 -> i
+    453:464:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0:0 -> i
+    465:471:void com.exzell.androidterminal.core.util.model.EmvAid.setTerminalID(java.lang.String):0:0 -> i
+    465:471:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0 -> i
+    472:483:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0:0 -> i
+    484:489:void com.exzell.androidterminal.core.util.model.EmvAid.setTransCurrencyCode(java.lang.String):0:0 -> i
+    484:489:com.exzell.androidterminal.core.util.model.EmvAid com.exzell.androidterminal.core.util.EmvUtils.createAid(java.lang.String):0 -> i
+    26:32:void com.exzell.androidterminal.core.util.model.EmvCapk.setRid(java.lang.String):0:0 -> j
+    26:32:com.exzell.androidterminal.core.util.model.EmvCapk com.exzell.androidterminal.core.util.EmvUtils.createCapk(java.lang.String):0 -> j
+    33:53:com.exzell.androidterminal.core.util.model.EmvCapk com.exzell.androidterminal.core.util.EmvUtils.createCapk(java.lang.String):0:0 -> j
+    54:57:void com.exzell.androidterminal.core.util.model.EmvCapk.setKeyID(int):0:0 -> j
+    54:57:com.exzell.androidterminal.core.util.model.EmvCapk com.exzell.androidterminal.core.util.EmvUtils.createCapk(java.lang.String):0 -> j
+    58:69:com.exzell.androidterminal.core.util.model.EmvCapk com.exzell.androidterminal.core.util.EmvUtils.createCapk(java.lang.String):0:0 -> j
+    70:76:void com.exzell.androidterminal.core.util.model.EmvCapk.setModul(java.lang.String):0:0 -> j
+    70:76:com.exzell.androidterminal.core.util.model.EmvCapk com.exzell.androidterminal.core.util.EmvUtils.createCapk(java.lang.String):0 -> j
+    77:88:com.exzell.androidterminal.core.util.model.EmvCapk com.exzell.androidterminal.core.util.EmvUtils.createCapk(java.lang.String):0:0 -> j
+    89:95:void com.exzell.androidterminal.core.util.model.EmvCapk.setChecksum(java.lang.String):0:0 -> j
+    89:95:com.exzell.androidterminal.core.util.model.EmvCapk com.exzell.androidterminal.core.util.EmvUtils.createCapk(java.lang.String):0 -> j
+    96:113:com.exzell.androidterminal.core.util.model.EmvCapk com.exzell.androidterminal.core.util.EmvUtils.createCapk(java.lang.String):0:0 -> j
+    114:117:void com.exzell.androidterminal.core.util.model.EmvCapk.setHashIndex(int):0:0 -> j
+    114:117:com.exzell.androidterminal.core.util.model.EmvCapk com.exzell.androidterminal.core.util.EmvUtils.createCapk(java.lang.String):0 -> j
+    118:129:com.exzell.androidterminal.core.util.model.EmvCapk com.exzell.androidterminal.core.util.EmvUtils.createCapk(java.lang.String):0:0 -> j
+    130:136:void com.exzell.androidterminal.core.util.model.EmvCapk.setExponent(java.lang.String):0:0 -> j
+    130:136:com.exzell.androidterminal.core.util.model.EmvCapk com.exzell.androidterminal.core.util.EmvUtils.createCapk(java.lang.String):0 -> j
+    137:148:com.exzell.androidterminal.core.util.model.EmvCapk com.exzell.androidterminal.core.util.EmvUtils.createCapk(java.lang.String):0:0 -> j
+    149:155:void com.exzell.androidterminal.core.util.model.EmvCapk.setExpiryDate(java.lang.String):0:0 -> j
+    149:155:com.exzell.androidterminal.core.util.model.EmvCapk com.exzell.androidterminal.core.util.EmvUtils.createCapk(java.lang.String):0 -> j
+    156:173:com.exzell.androidterminal.core.util.model.EmvCapk com.exzell.androidterminal.core.util.EmvUtils.createCapk(java.lang.String):0:0 -> j
+    174:175:void com.exzell.androidterminal.core.util.model.EmvCapk.setArithmeticIndex(int):0:0 -> j
+    174:175:com.exzell.androidterminal.core.util.model.EmvCapk com.exzell.androidterminal.core.util.EmvUtils.createCapk(java.lang.String):0 -> j
+    176:177:java.lang.String com.exzell.androidterminal.core.util.model.EmvCapk.getRid():0:0 -> j
+    176:177:com.exzell.androidterminal.core.util.model.EmvCapk com.exzell.androidterminal.core.util.EmvUtils.createCapk(java.lang.String):0 -> j
+    178:183:com.exzell.androidterminal.core.util.model.EmvCapk com.exzell.androidterminal.core.util.EmvUtils.createCapk(java.lang.String):0:0 -> j
+    184:187:int com.exzell.androidterminal.core.util.model.EmvCapk.getKeyID():0:0 -> j
+    184:187:com.exzell.androidterminal.core.util.model.EmvCapk com.exzell.androidterminal.core.util.EmvUtils.createCapk(java.lang.String):0 -> j
+    188:192:com.exzell.androidterminal.core.util.model.EmvCapk com.exzell.androidterminal.core.util.EmvUtils.createCapk(java.lang.String):0:0 -> j
+    193:194:java.lang.String com.exzell.androidterminal.core.util.model.EmvCapk.getRid():0:0 -> j
+    193:194:com.exzell.androidterminal.core.util.model.EmvCapk com.exzell.androidterminal.core.util.EmvUtils.createCapk(java.lang.String):0 -> j
+    195:197:com.exzell.androidterminal.core.util.model.EmvCapk com.exzell.androidterminal.core.util.EmvUtils.createCapk(java.lang.String):0:0 -> j
+    198:199:int com.exzell.androidterminal.core.util.model.EmvCapk.getKeyID():0:0 -> j
+    198:199:com.exzell.androidterminal.core.util.model.EmvCapk com.exzell.androidterminal.core.util.EmvUtils.createCapk(java.lang.String):0 -> j
+    200:214:com.exzell.androidterminal.core.util.model.EmvCapk com.exzell.androidterminal.core.util.EmvUtils.createCapk(java.lang.String):0:0 -> j
+    215:220:void com.exzell.androidterminal.core.util.model.EmvCapk.setRidKeyID(java.lang.String):0:0 -> j
+    215:220:com.exzell.androidterminal.core.util.model.EmvCapk com.exzell.androidterminal.core.util.EmvUtils.createCapk(java.lang.String):0 -> j
+    byte[] com.exzell.androidterminal.core.util.EncryptUtils.encryptTripleDes(byte[],byte[]) -> k
+    java.lang.String com.exzell.androidterminal.core.util.EmvUtils.formatAmount(java.lang.String) -> l
+    byte[] com.exzell.androidterminal.core.util.EncryptUtils.generateIPEK(byte[],byte[]) -> m
+    java.lang.String com.exzell.androidterminal.core.util.EncryptUtils.increaseKsn(java.lang.String,int) -> n
+    6:61:byte[] com.exzell.androidterminal.core.util.ByteUtils.hexToBytes(java.lang.String):0:0 -> o
+    6:61:java.util.Map com.exzell.androidterminal.core.util.EmvUtils.parseTlv(java.lang.String):0 -> o
+    62:120:java.util.Map com.exzell.androidterminal.core.util.EmvUtils.parseTlv(java.lang.String):0:0 -> o
+    121:155:long com.exzell.androidterminal.core.util.ByteUtils.bytesHexToLong(byte[],int,int):0:0 -> o
+    121:155:java.util.Map com.exzell.androidterminal.core.util.EmvUtils.parseTlv(java.lang.String):0 -> o
+    156:189:java.util.Map com.exzell.androidterminal.core.util.EmvUtils.parseTlv(java.lang.String):0:0 -> o
+androidx.collection.MapCollections -> a.d:
+    androidx.collection.MapCollections$KeySet mKeySet -> b
+    androidx.collection.MapCollections$ValuesCollection mValues -> c
+    androidx.collection.MapCollections$EntrySet mEntrySet -> a
+    java.lang.Object colGetEntry(int,int) -> a
+    void colRemoveAt(int) -> b
+    boolean equalsSetHelper(java.util.Set,java.lang.Object) -> c
+    4:7:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> d
+    4:7:java.lang.Object[] toArrayHelper(java.lang.Object[],int):0 -> d
+    8:43:java.lang.Object[] toArrayHelper(java.lang.Object[],int):0:0 -> d
+androidx.collection.MapCollections$ArrayIterator -> a.d$a:
+    androidx.collection.MapCollections this$0 -> e
+    int mSize -> b
+    int mIndex -> c
+    int mOffset -> a
+    boolean mCanRemove -> d
+    13:14:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> <init>
+    13:14:void <init>(androidx.collection.MapCollections,int):0 -> <init>
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    15:16:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> <init>
+    15:16:void <init>(androidx.collection.MapCollections,int):0 -> <init>
+    17:19:void <init>(androidx.collection.MapCollections,int):0:0 -> <init>
+    void forEachRemaining($-vivified-$.java.util.function.Consumer) -> forEachRemaining
+      # {"id":"com.android.tools.r8.synthesized"}
+    void forEachRemaining(java.util.function.Consumer) -> forEachRemaining
+      # {"id":"com.android.tools.r8.synthesized"}
+androidx.collection.MapCollections$EntrySet -> a.d$b:
+    androidx.collection.MapCollections this$0 -> a
+    3:8:boolean androidx.collection.MapCollections$EntrySet.add(java.util.Map$Entry):0:0 -> add
+    3:8:boolean add(java.lang.Object):0 -> add
+    6:7:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> addAll
+    6:7:boolean addAll(java.util.Collection):0 -> addAll
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    8:9:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> addAll
+    8:9:boolean addAll(java.util.Collection):0 -> addAll
+    10:36:boolean addAll(java.util.Collection):0:0 -> addAll
+    37:38:void androidx.collection.ArrayMap$1.colPut(java.lang.Object,java.lang.Object):0:0 -> addAll
+    37:38:boolean addAll(java.util.Collection):0 -> addAll
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    39:42:void androidx.collection.ArrayMap$1.colPut(java.lang.Object,java.lang.Object):0:0 -> addAll
+    39:42:boolean addAll(java.util.Collection):0 -> addAll
+    43:44:boolean addAll(java.util.Collection):0:0 -> addAll
+    45:46:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> addAll
+    45:46:boolean addAll(java.util.Collection):0 -> addAll
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    47:54:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> addAll
+    47:54:boolean addAll(java.util.Collection):0 -> addAll
+    5:6:void androidx.collection.ArrayMap$1.colClear():0:0 -> clear
+    5:6:void clear():0 -> clear
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    7:10:void androidx.collection.ArrayMap$1.colClear():0:0 -> clear
+    7:10:void clear():0 -> clear
+    18:19:int androidx.collection.ArrayMap$1.colIndexOfKey(java.lang.Object):0:0 -> contains
+    18:19:boolean contains(java.lang.Object):0 -> contains
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    20:27:int androidx.collection.ArrayMap$1.colIndexOfKey(java.lang.Object):0:0 -> contains
+    20:27:boolean contains(java.lang.Object):0 -> contains
+    28:39:boolean contains(java.lang.Object):0:0 -> contains
+    40:47:boolean androidx.collection.ContainerHelpers.equal(java.lang.Object,java.lang.Object):0:0 -> contains
+    40:47:boolean contains(java.lang.Object):0 -> contains
+    6:7:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> hashCode
+    6:7:int hashCode():0 -> hashCode
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    8:15:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> hashCode
+    8:15:int hashCode():0 -> hashCode
+    16:45:int hashCode():0:0 -> hashCode
+    5:6:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> isEmpty
+    5:6:boolean isEmpty():0 -> isEmpty
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    7:14:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> isEmpty
+    7:14:boolean isEmpty():0 -> isEmpty
+    5:6:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> size
+    5:6:int size():0 -> size
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    7:9:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> size
+    7:9:int size():0 -> size
+androidx.collection.MapCollections$KeySet -> a.d$c:
+    androidx.collection.MapCollections this$0 -> a
+    5:6:void androidx.collection.ArrayMap$1.colClear():0:0 -> clear
+    5:6:void clear():0 -> clear
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    7:10:void androidx.collection.ArrayMap$1.colClear():0:0 -> clear
+    7:10:void clear():0 -> clear
+    5:6:int androidx.collection.ArrayMap$1.colIndexOfKey(java.lang.Object):0:0 -> contains
+    5:6:boolean contains(java.lang.Object):0 -> contains
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    7:16:int androidx.collection.ArrayMap$1.colIndexOfKey(java.lang.Object):0:0 -> contains
+    7:16:boolean contains(java.lang.Object):0 -> contains
+    5:6:java.util.Map androidx.collection.ArrayMap$1.colGetMap():0:0 -> containsAll
+    5:6:boolean containsAll(java.util.Collection):0 -> containsAll
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    7:30:boolean androidx.collection.MapCollections.containsAllHelper(java.util.Map,java.util.Collection):0:0 -> containsAll
+    7:30:boolean containsAll(java.util.Collection):0 -> containsAll
+    6:7:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> hashCode
+    6:7:int hashCode():0 -> hashCode
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    8:15:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> hashCode
+    8:15:int hashCode():0 -> hashCode
+    16:32:int hashCode():0:0 -> hashCode
+    5:6:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> isEmpty
+    5:6:boolean isEmpty():0 -> isEmpty
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    7:14:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> isEmpty
+    7:14:boolean isEmpty():0 -> isEmpty
+    6:7:int androidx.collection.ArrayMap$1.colIndexOfKey(java.lang.Object):0:0 -> remove
+    6:7:boolean remove(java.lang.Object):0 -> remove
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    8:13:int androidx.collection.ArrayMap$1.colIndexOfKey(java.lang.Object):0:0 -> remove
+    8:13:boolean remove(java.lang.Object):0 -> remove
+    14:20:boolean remove(java.lang.Object):0:0 -> remove
+    5:6:java.util.Map androidx.collection.ArrayMap$1.colGetMap():0:0 -> removeAll
+    5:6:boolean removeAll(java.util.Collection):0 -> removeAll
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    7:38:boolean androidx.collection.MapCollections.removeAllHelper(java.util.Map,java.util.Collection):0:0 -> removeAll
+    7:38:boolean removeAll(java.util.Collection):0 -> removeAll
+    5:6:java.util.Map androidx.collection.ArrayMap$1.colGetMap():0:0 -> retainAll
+    5:6:boolean retainAll(java.util.Collection):0 -> retainAll
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    7:48:boolean androidx.collection.MapCollections.retainAllHelper(java.util.Map,java.util.Collection):0:0 -> retainAll
+    7:48:boolean retainAll(java.util.Collection):0 -> retainAll
+    5:6:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> size
+    5:6:int size():0 -> size
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    7:9:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> size
+    7:9:int size():0 -> size
+    1:1:java.lang.Object[] androidx.collection.MapCollections.toArrayHelper(int):0:0 -> toArray
+    1:1:java.lang.Object[] toArray():0 -> toArray
+    2:2:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> toArray
+    2:2:java.lang.Object[] androidx.collection.MapCollections.toArrayHelper(int):0 -> toArray
+    2:2:java.lang.Object[] toArray():0 -> toArray
+    3:3:java.lang.Object[] androidx.collection.MapCollections.toArrayHelper(int):0:0 -> toArray
+    3:3:java.lang.Object[] toArray():0 -> toArray
+androidx.collection.MapCollections$MapIterator -> a.d$d:
+    int mIndex -> b
+    boolean mEntryValid -> c
+    androidx.collection.MapCollections this$0 -> d
+    int mEnd -> a
+    11:12:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> <init>
+    11:12:void <init>(androidx.collection.MapCollections):0 -> <init>
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    13:16:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> <init>
+    13:16:void <init>(androidx.collection.MapCollections):0 -> <init>
+    17:22:void <init>(androidx.collection.MapCollections):0:0 -> <init>
+    30:41:boolean androidx.collection.ContainerHelpers.equal(java.lang.Object,java.lang.Object):0:0 -> equals
+    30:41:boolean equals(java.lang.Object):0 -> equals
+    42:55:boolean equals(java.lang.Object):0:0 -> equals
+    56:69:boolean androidx.collection.ContainerHelpers.equal(java.lang.Object,java.lang.Object):0:0 -> equals
+    56:69:boolean equals(java.lang.Object):0 -> equals
+    70:77:boolean equals(java.lang.Object):0:0 -> equals
+    void forEachRemaining($-vivified-$.java.util.function.Consumer) -> forEachRemaining
+      # {"id":"com.android.tools.r8.synthesized"}
+    void forEachRemaining(java.util.function.Consumer) -> forEachRemaining
+      # {"id":"com.android.tools.r8.synthesized"}
+    0:65535:java.util.Map$Entry androidx.collection.MapCollections$MapIterator.next():0:0 -> next
+    0:65535:java.lang.Object next():0 -> next
+    15:16:java.lang.Object androidx.collection.SimpleArrayMap.setValueAt(int,java.lang.Object):0:0 -> setValue
+    15:16:java.lang.Object androidx.collection.ArrayMap$1.colSetValue(int,java.lang.Object):0 -> setValue
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    15:16:java.lang.Object setValue(java.lang.Object):0 -> setValue
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(2)"]}
+    17:18:java.lang.Object androidx.collection.SimpleArrayMap.setValueAt(int,java.lang.Object):0:0 -> setValue
+    17:18:java.lang.Object androidx.collection.ArrayMap$1.colSetValue(int,java.lang.Object):0 -> setValue
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    17:18:java.lang.Object setValue(java.lang.Object):0 -> setValue
+    19:23:java.lang.Object androidx.collection.SimpleArrayMap.setValueAt(int,java.lang.Object):0:0 -> setValue
+    19:23:java.lang.Object androidx.collection.ArrayMap$1.colSetValue(int,java.lang.Object):0 -> setValue
+    19:23:java.lang.Object setValue(java.lang.Object):0 -> setValue
+    24:31:java.lang.Object setValue(java.lang.Object):0:0 -> setValue
+androidx.collection.MapCollections$ValuesCollection -> a.d$e:
+    androidx.collection.MapCollections this$0 -> a
+    5:6:void androidx.collection.ArrayMap$1.colClear():0:0 -> clear
+    5:6:void clear():0 -> clear
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    7:10:void androidx.collection.ArrayMap$1.colClear():0:0 -> clear
+    7:10:void clear():0 -> clear
+    5:6:int androidx.collection.ArrayMap$1.colIndexOfValue(java.lang.Object):0:0 -> contains
+    5:6:boolean contains(java.lang.Object):0 -> contains
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    7:16:int androidx.collection.ArrayMap$1.colIndexOfValue(java.lang.Object):0:0 -> contains
+    7:16:boolean contains(java.lang.Object):0 -> contains
+    5:6:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> isEmpty
+    5:6:boolean isEmpty():0 -> isEmpty
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    7:14:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> isEmpty
+    7:14:boolean isEmpty():0 -> isEmpty
+    6:7:int androidx.collection.ArrayMap$1.colIndexOfValue(java.lang.Object):0:0 -> remove
+    6:7:boolean remove(java.lang.Object):0 -> remove
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    8:13:int androidx.collection.ArrayMap$1.colIndexOfValue(java.lang.Object):0:0 -> remove
+    8:13:boolean remove(java.lang.Object):0 -> remove
+    14:20:boolean remove(java.lang.Object):0:0 -> remove
+    6:7:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> removeAll
+    6:7:boolean removeAll(java.util.Collection):0 -> removeAll
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    8:14:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> removeAll
+    8:14:boolean removeAll(java.util.Collection):0 -> removeAll
+    15:35:boolean removeAll(java.util.Collection):0:0 -> removeAll
+    6:7:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> retainAll
+    6:7:boolean retainAll(java.util.Collection):0 -> retainAll
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    8:14:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> retainAll
+    8:14:boolean retainAll(java.util.Collection):0 -> retainAll
+    15:35:boolean retainAll(java.util.Collection):0:0 -> retainAll
+    5:6:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> size
+    5:6:int size():0 -> size
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    7:9:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> size
+    7:9:int size():0 -> size
+    1:1:java.lang.Object[] androidx.collection.MapCollections.toArrayHelper(int):0:0 -> toArray
+    1:1:java.lang.Object[] toArray():0 -> toArray
+    2:2:int androidx.collection.ArrayMap$1.colGetSize():0:0 -> toArray
+    2:2:java.lang.Object[] androidx.collection.MapCollections.toArrayHelper(int):0 -> toArray
+    2:2:java.lang.Object[] toArray():0 -> toArray
+    3:3:java.lang.Object[] androidx.collection.MapCollections.toArrayHelper(int):0:0 -> toArray
+    3:3:java.lang.Object[] toArray():0 -> toArray
+androidx.collection.SimpleArrayMap -> a.e:
+    java.lang.Object[] mBaseCache -> d
+    java.lang.Object[] mArray -> b
+    int mTwiceBaseCacheSize -> g
+    int[] mHashes -> a
+    int mBaseCacheSize -> e
+    int mSize -> c
+    java.lang.Object[] mTwiceBaseCache -> f
+    void allocArrays(int) -> a
+    1:1:int androidx.collection.ContainerHelpers.binarySearch(int[],int,int):0:0 -> b
+    1:1:int binarySearchHashes(int[],int,int):0 -> b
+    2:2:int binarySearchHashes(int[],int,int):0:0 -> b
+    void freeArrays(int[],java.lang.Object[],int) -> c
+    int indexOf(java.lang.Object,int) -> d
+    int indexOfKey(java.lang.Object) -> e
+    12:13:int androidx.collection.SimpleArrayMap.size():0:0 -> equals
+    12:13:boolean equals(java.lang.Object):0 -> equals
+    14:19:int androidx.collection.SimpleArrayMap.size():0:0 -> equals
+    14:19:boolean equals(java.lang.Object):0 -> equals
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    20:23:boolean equals(java.lang.Object):0:0 -> equals
+    24:31:java.lang.Object androidx.collection.SimpleArrayMap.keyAt(int):0:0 -> equals
+    24:31:boolean equals(java.lang.Object):0 -> equals
+    32:33:java.lang.Object androidx.collection.SimpleArrayMap.valueAt(int):0:0 -> equals
+    32:33:boolean equals(java.lang.Object):0 -> equals
+    34:66:boolean equals(java.lang.Object):0:0 -> equals
+    67:68:int androidx.collection.SimpleArrayMap.size():0:0 -> equals
+    67:68:boolean equals(java.lang.Object):0 -> equals
+    69:80:boolean equals(java.lang.Object):0:0 -> equals
+    81:88:java.lang.Object androidx.collection.SimpleArrayMap.keyAt(int):0:0 -> equals
+    81:88:boolean equals(java.lang.Object):0 -> equals
+    89:90:java.lang.Object androidx.collection.SimpleArrayMap.valueAt(int):0:0 -> equals
+    89:90:boolean equals(java.lang.Object):0 -> equals
+    91:117:boolean equals(java.lang.Object):0:0 -> equals
+    int indexOfNull() -> f
+    int indexOfValue(java.lang.Object) -> g
+    java.lang.Object removeAt(int) -> h
+    36:45:java.lang.Object androidx.collection.SimpleArrayMap.keyAt(int):0:0 -> toString
+    36:45:java.lang.String toString():0 -> toString
+    46:57:java.lang.String toString():0:0 -> toString
+    58:65:java.lang.Object androidx.collection.SimpleArrayMap.valueAt(int):0:0 -> toString
+    58:65:java.lang.String toString():0 -> toString
+    66:85:java.lang.String toString():0:0 -> toString
+androidx.core.app.CoreComponentFactory -> androidx.core.app.CoreComponentFactory:
+    java.lang.Object checkCompatWrapper(java.lang.Object) -> a
+androidx.core.app.CoreComponentFactory$CompatWrapped -> androidx.core.app.CoreComponentFactory$a:
+    java.lang.Object getWrapper() -> a
+androidx.core.app.RemoteActionCompat -> androidx.core.app.RemoteActionCompat:
+    androidx.core.graphics.drawable.IconCompat mIcon -> a
+    java.lang.CharSequence mTitle -> b
+    java.lang.CharSequence mContentDescription -> c
+    boolean mEnabled -> e
+    boolean mShouldShowIcon -> f
+    android.app.PendingIntent mActionIntent -> d
+androidx.core.app.RemoteActionCompatParcelizer -> androidx.core.app.RemoteActionCompatParcelizer:
+    9:15:androidx.versionedparcelable.VersionedParcelable androidx.versionedparcelable.VersionedParcel.readVersionedParcelable(androidx.versionedparcelable.VersionedParcelable,int):0:0 -> read
+    9:15:androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel):0 -> read
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    16:19:androidx.versionedparcelable.VersionedParcelable androidx.versionedparcelable.VersionedParcel.readVersionedParcelable(androidx.versionedparcelable.VersionedParcelable,int):0:0 -> read
+    16:19:androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel):0 -> read
+    20:26:androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel):0:0 -> read
+    27:37:java.lang.CharSequence androidx.versionedparcelable.VersionedParcel.readCharSequence(java.lang.CharSequence,int):0:0 -> read
+    27:37:androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel):0 -> read
+    38:42:androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel):0:0 -> read
+    43:53:java.lang.CharSequence androidx.versionedparcelable.VersionedParcel.readCharSequence(java.lang.CharSequence,int):0:0 -> read
+    43:53:androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel):0 -> read
+    54:58:androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel):0:0 -> read
+    59:69:android.os.Parcelable androidx.versionedparcelable.VersionedParcel.readParcelable(android.os.Parcelable,int):0:0 -> read
+    59:69:androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel):0 -> read
+    70:76:androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel):0:0 -> read
+    77:87:boolean androidx.versionedparcelable.VersionedParcel.readBoolean(boolean,int):0:0 -> read
+    77:87:androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel):0 -> read
+    88:92:androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel):0:0 -> read
+    93:103:boolean androidx.versionedparcelable.VersionedParcel.readBoolean(boolean,int):0:0 -> read
+    93:103:androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel):0 -> read
+    104:106:androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel):0:0 -> read
+    7:12:void androidx.versionedparcelable.VersionedParcel.writeVersionedParcelable(androidx.versionedparcelable.VersionedParcelable,int):0:0 -> write
+    7:12:void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel):0 -> write
+    13:15:void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel):0:0 -> write
+    16:21:void androidx.versionedparcelable.VersionedParcel.writeCharSequence(java.lang.CharSequence,int):0:0 -> write
+    16:21:void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel):0 -> write
+    22:24:void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel):0:0 -> write
+    25:30:void androidx.versionedparcelable.VersionedParcel.writeCharSequence(java.lang.CharSequence,int):0:0 -> write
+    25:30:void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel):0 -> write
+    31:33:void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel):0:0 -> write
+    34:39:void androidx.versionedparcelable.VersionedParcel.writeParcelable(android.os.Parcelable,int):0:0 -> write
+    34:39:void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel):0 -> write
+    40:42:void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel):0:0 -> write
+    43:48:void androidx.versionedparcelable.VersionedParcel.writeBoolean(boolean,int):0:0 -> write
+    43:48:void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel):0 -> write
+    49:51:void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel):0:0 -> write
+    52:58:void androidx.versionedparcelable.VersionedParcel.writeBoolean(boolean,int):0:0 -> write
+    52:58:void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel):0 -> write
+androidx.core.graphics.drawable.IconCompat -> androidx.core.graphics.drawable.IconCompat:
+    java.lang.String mTintModeStr -> i
+    android.graphics.PorterDuff$Mode DEFAULT_TINT_MODE -> k
+    java.lang.String mString1 -> j
+    android.graphics.PorterDuff$Mode mTintMode -> h
+    android.os.Parcelable mParcelable -> d
+    java.lang.Object mObj1 -> b
+    int mInt2 -> f
+    android.content.res.ColorStateList mTintList -> g
+    int mInt1 -> e
+    byte[] mData -> c
+    int mType -> a
+    108:124:int getResId():0:0 -> toString
+    108:124:java.lang.String toString():0 -> toString
+    125:171:int androidx.core.graphics.drawable.IconCompat$Api23Impl.getResId(java.lang.Object):0:0 -> toString
+    125:171:int getResId():0 -> toString
+    125:171:java.lang.String toString():0 -> toString
+    172:173:int getResId():0:0 -> toString
+    172:173:java.lang.String toString():0 -> toString
+    174:189:java.lang.String toString():0:0 -> toString
+    190:211:int getResId():0:0 -> toString
+    190:211:java.lang.String toString():0 -> toString
+    212:282:java.lang.String toString():0:0 -> toString
+androidx.core.graphics.drawable.IconCompat$Api28Impl -> androidx.core.graphics.drawable.IconCompat$a:
+    int getResId(java.lang.Object) -> a
+    java.lang.String getResPackage(java.lang.Object) -> b
+    int getType(java.lang.Object) -> c
+    android.net.Uri getUri(java.lang.Object) -> d
+androidx.core.graphics.drawable.IconCompat$Api28Impl$$ExternalSyntheticApiModelOutline0 -> b.a:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    int androidx.core.graphics.drawable.IconCompat$Api28Impl$$InternalSyntheticApiModelOutline$1$0cc1fb17db561c5ba334428991ab275abe874bc3f63f42e6ae00a455df2f29af$0.m(android.graphics.drawable.Icon) -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    android.net.Uri androidx.core.graphics.drawable.IconCompat$Api28Impl$$InternalSyntheticApiModelOutline$1$1d5cd78ab5bc2ba7c5847bdfe6baf67c823a02789768df43e179f05a9e3c22c3$0.m(android.graphics.drawable.Icon) -> b
+      # {"id":"com.android.tools.r8.synthesized"}
+    java.lang.String androidx.core.graphics.drawable.IconCompat$Api28Impl$$InternalSyntheticApiModelOutline$1$425daee209e8ac6dbaf4d4161c4994372512a53b633026f0a72c7baf9f5b568e$0.m(android.graphics.drawable.Icon) -> c
+      # {"id":"com.android.tools.r8.synthesized"}
+    int androidx.core.graphics.drawable.IconCompat$Api28Impl$$InternalSyntheticApiModelOutline$1$40b39641b9d6ef68de58f9b92a6906fe9b99705bdf062dc89a3ea0a21d65018d$0.m(android.graphics.drawable.Icon) -> d
+      # {"id":"com.android.tools.r8.synthesized"}
+androidx.core.graphics.drawable.IconCompatParcelizer -> androidx.core.graphics.drawable.IconCompatParcelizer:
+    9:15:int androidx.versionedparcelable.VersionedParcel.readInt(int,int):0:0 -> read
+    9:15:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):0 -> read
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    16:19:int androidx.versionedparcelable.VersionedParcel.readInt(int,int):0:0 -> read
+    16:19:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):0 -> read
+    20:24:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):0:0 -> read
+    25:35:byte[] androidx.versionedparcelable.VersionedParcel.readByteArray(byte[],int):0:0 -> read
+    25:35:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):0 -> read
+    36:40:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):0:0 -> read
+    41:51:android.os.Parcelable androidx.versionedparcelable.VersionedParcel.readParcelable(android.os.Parcelable,int):0:0 -> read
+    41:51:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):0 -> read
+    52:56:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):0:0 -> read
+    57:67:int androidx.versionedparcelable.VersionedParcel.readInt(int,int):0:0 -> read
+    57:67:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):0 -> read
+    68:72:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):0:0 -> read
+    73:83:int androidx.versionedparcelable.VersionedParcel.readInt(int,int):0:0 -> read
+    73:83:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):0 -> read
+    84:88:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):0:0 -> read
+    89:99:android.os.Parcelable androidx.versionedparcelable.VersionedParcel.readParcelable(android.os.Parcelable,int):0:0 -> read
+    89:99:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):0 -> read
+    100:106:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):0:0 -> read
+    107:117:java.lang.String androidx.versionedparcelable.VersionedParcel.readString(java.lang.String,int):0:0 -> read
+    107:117:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):0 -> read
+    118:123:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):0:0 -> read
+    124:134:java.lang.String androidx.versionedparcelable.VersionedParcel.readString(java.lang.String,int):0:0 -> read
+    124:134:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):0 -> read
+    135:136:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):0:0 -> read
+    137:224:void androidx.core.graphics.drawable.IconCompat.onPostParceling():0:0 -> read
+    137:224:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):0 -> read
+    4:5:void androidx.core.graphics.drawable.IconCompat.onPreParceling(boolean):0:0 -> write
+    4:5:void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel):0 -> write
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    6:64:void androidx.core.graphics.drawable.IconCompat.onPreParceling(boolean):0:0 -> write
+    6:64:void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel):0 -> write
+    65:70:void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel):0:0 -> write
+    71:76:void androidx.versionedparcelable.VersionedParcel.writeInt(int,int):0:0 -> write
+    71:76:void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel):0 -> write
+    77:81:void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel):0:0 -> write
+    82:87:void androidx.versionedparcelable.VersionedParcel.writeByteArray(byte[],int):0:0 -> write
+    82:87:void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel):0 -> write
+    88:92:void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel):0:0 -> write
+    93:98:void androidx.versionedparcelable.VersionedParcel.writeParcelable(android.os.Parcelable,int):0:0 -> write
+    93:98:void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel):0 -> write
+    99:103:void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel):0:0 -> write
+    104:109:void androidx.versionedparcelable.VersionedParcel.writeInt(int,int):0:0 -> write
+    104:109:void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel):0 -> write
+    110:114:void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel):0:0 -> write
+    115:120:void androidx.versionedparcelable.VersionedParcel.writeInt(int,int):0:0 -> write
+    115:120:void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel):0 -> write
+    121:125:void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel):0:0 -> write
+    126:131:void androidx.versionedparcelable.VersionedParcel.writeParcelable(android.os.Parcelable,int):0:0 -> write
+    126:131:void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel):0 -> write
+    132:136:void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel):0:0 -> write
+    137:142:void androidx.versionedparcelable.VersionedParcel.writeString(java.lang.String,int):0:0 -> write
+    137:142:void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel):0 -> write
+    143:148:void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel):0:0 -> write
+    149:156:void androidx.versionedparcelable.VersionedParcel.writeString(java.lang.String,int):0:0 -> write
+    149:156:void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel):0 -> write
+androidx.versionedparcelable.ParcelImpl -> androidx.versionedparcelable.ParcelImpl:
+    androidx.versionedparcelable.VersionedParcelable mParcel -> a
+androidx.versionedparcelable.ParcelImpl$1 -> androidx.versionedparcelable.ParcelImpl$a:
+    0:65535:androidx.versionedparcelable.ParcelImpl createFromParcel(android.os.Parcel):0:0 -> createFromParcel
+    0:65535:java.lang.Object createFromParcel(android.os.Parcel):0 -> createFromParcel
+    0:65535:androidx.versionedparcelable.ParcelImpl[] newArray(int):0:0 -> newArray
+    0:65535:java.lang.Object[] newArray(int):0 -> newArray
+androidx.versionedparcelable.VersionedParcel -> c.a:
+    androidx.collection.ArrayMap mParcelizerCache -> c
+    androidx.collection.ArrayMap mReadCache -> a
+    androidx.collection.ArrayMap mWriteCache -> b
+    androidx.versionedparcelable.VersionedParcel createSubParcel() -> a
+    java.lang.Class findParcelClass(java.lang.Class) -> b
+    java.lang.reflect.Method getReadMethod(java.lang.String) -> c
+    java.lang.reflect.Method getWriteMethod(java.lang.Class) -> d
+    boolean readBoolean() -> e
+    byte[] readByteArray() -> f
+    java.lang.CharSequence readCharSequence() -> g
+    boolean readField(int) -> h
+    int readInt() -> i
+    android.os.Parcelable readParcelable() -> j
+    java.lang.String readString() -> k
+    13:80:androidx.versionedparcelable.VersionedParcelable androidx.versionedparcelable.VersionedParcel.readFromParcel(java.lang.String,androidx.versionedparcelable.VersionedParcel):0:0 -> l
+    13:80:androidx.versionedparcelable.VersionedParcelable readVersionedParcelable():0 -> l
+    void setOutputField(int) -> m
+    void writeBoolean(boolean) -> n
+    void writeByteArray(byte[]) -> o
+    void writeCharSequence(java.lang.CharSequence) -> p
+    void writeInt(int) -> q
+    void writeParcelable(android.os.Parcelable) -> r
+    void writeString(java.lang.String) -> s
+    8:22:void androidx.versionedparcelable.VersionedParcel.writeVersionedParcelableCreator(androidx.versionedparcelable.VersionedParcelable):0:0 -> t
+    8:22:void writeVersionedParcelable(androidx.versionedparcelable.VersionedParcelable):0 -> t
+    23:26:void writeVersionedParcelable(androidx.versionedparcelable.VersionedParcelable):0:0 -> t
+    27:46:void androidx.versionedparcelable.VersionedParcel.writeToParcel(androidx.versionedparcelable.VersionedParcelable,androidx.versionedparcelable.VersionedParcel):0:0 -> t
+    27:46:void writeVersionedParcelable(androidx.versionedparcelable.VersionedParcelable):0 -> t
+    47:51:void writeVersionedParcelable(androidx.versionedparcelable.VersionedParcelable):0:0 -> t
+    52:102:void androidx.versionedparcelable.VersionedParcel.writeToParcel(androidx.versionedparcelable.VersionedParcelable,androidx.versionedparcelable.VersionedParcel):0:0 -> t
+    52:102:void writeVersionedParcelable(androidx.versionedparcelable.VersionedParcelable):0 -> t
+    103:122:void androidx.versionedparcelable.VersionedParcel.writeVersionedParcelableCreator(androidx.versionedparcelable.VersionedParcelable):0:0 -> t
+    103:122:void writeVersionedParcelable(androidx.versionedparcelable.VersionedParcelable):0 -> t
+androidx.versionedparcelable.VersionedParcelParcel -> c.b:
+    android.util.SparseIntArray mPositionLookup -> d
+    java.lang.String mPrefix -> h
+    int mNextRead -> j
+    android.os.Parcel mParcel -> e
+    int mFieldId -> k
+    int mCurrentField -> i
+    int mOffset -> f
+    int mEnd -> g
+    androidx.versionedparcelable.VersionedParcel createSubParcel() -> a
+    boolean readBoolean() -> e
+    byte[] readByteArray() -> f
+    java.lang.CharSequence readCharSequence() -> g
+    boolean readField(int) -> h
+    int readInt() -> i
+    android.os.Parcelable readParcelable() -> j
+    java.lang.String readString() -> k
+    void setOutputField(int) -> m
+    void writeBoolean(boolean) -> n
+    void writeByteArray(byte[]) -> o
+    void writeCharSequence(java.lang.CharSequence) -> p
+    void writeInt(int) -> q
+    void writeParcelable(android.os.Parcelable) -> r
+    void writeString(java.lang.String) -> s
+    void closeField() -> u
+androidx.versionedparcelable.VersionedParcelable -> c.c:
+com.exzell.androidterminal.core.core.EmvCallback$-CC -> com.exzell.androidterminal.core.core.a:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    void $default$onPinEntered(com.exzell.androidterminal.core.core.EmvCallback,java.lang.String) -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    boolean $default$onPinPrepare(com.exzell.androidterminal.core.core.EmvCallback,java.lang.String,java.lang.String) -> b
+      # {"id":"com.android.tools.r8.synthesized"}
+com.exzell.androidterminal.core.core.EmvConfig -> com.exzell.androidterminal.core.core.EmvConfig:
+    13:13:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":56},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    56:56:int hashCode():0:0 -> hashCode
+    14:18:int hashCode():0:0 -> hashCode
+    19:19:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":56},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    56:56:int hashCode():0:0 -> hashCode
+    20:37:int hashCode():0:0 -> hashCode
+    38:38:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":56},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    56:56:int hashCode():0:0 -> hashCode
+    39:43:int hashCode():0:0 -> hashCode
+    44:44:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":56},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    56:56:int hashCode():0:0 -> hashCode
+    45:55:int hashCode():0:0 -> hashCode
+com.exzell.androidterminal.core.core.EmvConfig$$ExternalSyntheticOutline0 -> com.exzell.androidterminal.core.core.b:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    com.zcs.sdk.card.CardReaderTypeEnum[] com.zcs.sdk.card.CardReaderTypeEnum.values() -> _values
+    byte com.zcs.sdk.pin.PinAlgorithmMode$EnumUnboxingLocalUtility.getType(int) -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    0:65535:int com.exzell.androidterminal.core.core.EmvConfig$$InternalSyntheticOutline$28$4a156fe74054d60bd8e37fd67617a43d221dde2abfd208f8bbfde74993506f5c$0.m(java.lang.String,int,int):0:0 -> b
+      # {"id":"com.android.tools.r8.synthesized"}
+      # {"id":"com.android.tools.r8.outline"}
+com.exzell.androidterminal.core.model.EmvTransactionData -> com.exzell.androidterminal.core.model.EmvTransactionData:
+    13:13:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":129},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    129:129:int hashCode():0:0 -> hashCode
+    14:18:int hashCode():0:0 -> hashCode
+    19:19:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":129},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    129:129:int hashCode():0:0 -> hashCode
+    20:24:int hashCode():0:0 -> hashCode
+    25:25:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":129},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    129:129:int hashCode():0:0 -> hashCode
+    26:30:int hashCode():0:0 -> hashCode
+    31:31:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":129},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    129:129:int hashCode():0:0 -> hashCode
+    32:36:int hashCode():0:0 -> hashCode
+    37:37:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":129},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    129:129:int hashCode():0:0 -> hashCode
+    38:47:int hashCode():0:0 -> hashCode
+    48:48:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":129},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    129:129:int hashCode():0:0 -> hashCode
+    49:53:int hashCode():0:0 -> hashCode
+    54:54:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":129},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    129:129:int hashCode():0:0 -> hashCode
+    55:59:int hashCode():0:0 -> hashCode
+    60:60:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":129},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    129:129:int hashCode():0:0 -> hashCode
+    61:65:int hashCode():0:0 -> hashCode
+    66:66:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":129},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    129:129:int hashCode():0:0 -> hashCode
+    67:71:int hashCode():0:0 -> hashCode
+    72:72:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":129},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    129:129:int hashCode():0:0 -> hashCode
+    73:77:int hashCode():0:0 -> hashCode
+    78:78:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":129},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    129:129:int hashCode():0:0 -> hashCode
+    79:83:int hashCode():0:0 -> hashCode
+    84:84:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":129},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    129:129:int hashCode():0:0 -> hashCode
+    85:89:int hashCode():0:0 -> hashCode
+    90:90:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":129},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    129:129:int hashCode():0:0 -> hashCode
+    91:95:int hashCode():0:0 -> hashCode
+    96:96:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":129},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    129:129:int hashCode():0:0 -> hashCode
+    97:101:int hashCode():0:0 -> hashCode
+    102:102:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":129},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    129:129:int hashCode():0:0 -> hashCode
+    103:128:int hashCode():0:0 -> hashCode
+com.exzell.androidterminal.core.util.model.EmvAid -> e.a:
+    int eccTTlFlag -> n
+    java.lang.String tacDenial -> f
+    int isOnlinePin -> l
+    int targetPer -> j
+    long floorLimit -> g
+    int referCurrencyExp -> E
+    int selFlag -> b
+    int transCurrencyExp -> C
+    java.lang.String riskManagementData -> v
+    java.lang.String merchantName -> x
+    java.lang.String merchantID -> z
+    java.lang.String aid -> a
+    java.lang.String version -> c
+    java.lang.String transCurrencyCode -> B
+    java.lang.String tacOnline -> e
+    java.lang.String referCurrencyCode -> D
+    java.lang.String ddol -> k
+    long threshold -> h
+    java.lang.String eccTTlValue -> m
+    int maxTargetPer -> i
+    java.lang.String rdContactlessFloorLimit -> o
+    int referCurrencyCon -> F
+    java.lang.String rdContactlessTransLimit -> q
+    java.lang.String rdCvmLimit -> s
+    java.lang.String tdol -> u
+    java.lang.String acquirerID -> w
+    java.lang.String merchantCateCode -> y
+    int rdCvmLimitFlag -> t
+    java.lang.String terminalID -> A
+    int rdContactlessTransLimitFlag -> r
+    int rdContactlessFloorLimitFlag -> p
+    java.lang.String tbcDefault -> d
+    3:73:void com.exzell.androidterminal.core.util.model.EmvAid.<init>(java.lang.String,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,long,long,int,int,java.lang.String,int,java.lang.String,int,java.lang.String,int,java.lang.String,int,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,java.lang.String,int,int):0:0 -> <init>
+    3:73:void com.exzell.androidterminal.core.util.model.EmvAid.<init>(java.lang.String,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,long,long,int,int,java.lang.String,int,java.lang.String,int,java.lang.String,int,java.lang.String,int,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,java.lang.String,int,int,int,kotlin.jvm.internal.DefaultConstructorMarker):0 -> <init>
+    3:73:void <init>():0 -> <init>
+    18:18:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":195},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    195:195:int hashCode():0:0 -> hashCode
+    19:23:int hashCode():0:0 -> hashCode
+    24:24:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":195},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    195:195:int hashCode():0:0 -> hashCode
+    25:29:int hashCode():0:0 -> hashCode
+    30:30:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":195},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    195:195:int hashCode():0:0 -> hashCode
+    31:35:int hashCode():0:0 -> hashCode
+    36:36:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":195},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    195:195:int hashCode():0:0 -> hashCode
+    37:73:int hashCode():0:0 -> hashCode
+    74:74:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":195},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    195:195:int hashCode():0:0 -> hashCode
+    75:84:int hashCode():0:0 -> hashCode
+    85:85:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":195},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    195:195:int hashCode():0:0 -> hashCode
+    86:95:int hashCode():0:0 -> hashCode
+    96:96:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":195},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    195:195:int hashCode():0:0 -> hashCode
+    97:106:int hashCode():0:0 -> hashCode
+    107:107:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":195},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    195:195:int hashCode():0:0 -> hashCode
+    108:117:int hashCode():0:0 -> hashCode
+    118:118:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":195},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    195:195:int hashCode():0:0 -> hashCode
+    119:128:int hashCode():0:0 -> hashCode
+    129:129:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":195},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    195:195:int hashCode():0:0 -> hashCode
+    130:134:int hashCode():0:0 -> hashCode
+    135:135:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":195},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    195:195:int hashCode():0:0 -> hashCode
+    136:140:int hashCode():0:0 -> hashCode
+    141:141:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":195},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    195:195:int hashCode():0:0 -> hashCode
+    142:146:int hashCode():0:0 -> hashCode
+    147:147:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":195},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    195:195:int hashCode():0:0 -> hashCode
+    148:152:int hashCode():0:0 -> hashCode
+    153:153:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":195},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    195:195:int hashCode():0:0 -> hashCode
+    154:158:int hashCode():0:0 -> hashCode
+    159:159:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":195},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    195:195:int hashCode():0:0 -> hashCode
+    160:164:int hashCode():0:0 -> hashCode
+    165:165:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":195},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    195:195:int hashCode():0:0 -> hashCode
+    166:170:int hashCode():0:0 -> hashCode
+    171:171:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":195},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    195:195:int hashCode():0:0 -> hashCode
+    172:181:int hashCode():0:0 -> hashCode
+    182:182:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":195},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    195:195:int hashCode():0:0 -> hashCode
+    183:194:int hashCode():0:0 -> hashCode
+com.exzell.androidterminal.core.util.model.EmvCapk -> e.b:
+    java.lang.String expiryDate -> g
+    java.lang.String exponent -> f
+    java.lang.String ridKeyID -> i
+    int arithmeticIndex -> h
+    java.lang.String rid -> a
+    int hashIndex -> e
+    int keyID -> b
+    java.lang.String modul -> c
+    java.lang.String checksum -> d
+    3:25:void com.exzell.androidterminal.core.util.model.EmvCapk.<init>(java.lang.String,int,java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,int,java.lang.String):0:0 -> <init>
+    3:25:void com.exzell.androidterminal.core.util.model.EmvCapk.<init>(java.lang.String,int,java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,int,java.lang.String,int,kotlin.jvm.internal.DefaultConstructorMarker):0 -> <init>
+    3:25:void <init>():0 -> <init>
+    18:18:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":58},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    58:58:int hashCode():0:0 -> hashCode
+    19:23:int hashCode():0:0 -> hashCode
+    24:24:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":58},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    58:58:int hashCode():0:0 -> hashCode
+    25:34:int hashCode():0:0 -> hashCode
+    35:35:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":58},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    58:58:int hashCode():0:0 -> hashCode
+    36:40:int hashCode():0:0 -> hashCode
+    41:41:int hashCode():0:0 -> hashCode
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":58},"outline":"Lcom/exzell/androidterminal/core/core/b;b(Ljava/lang/String;II)I"}
+    58:58:int hashCode():0:0 -> hashCode
+    42:57:int hashCode():0:0 -> hashCode
+com.exzell.androidterminal.hcc.EmvManager -> f.c:
+    android.content.Context context -> a
+    com.exzell.androidterminal.hcc.EmvProcessor processor -> h
+    com.zcs.sdk.emv.EmvHandler emvHandler -> c
+    com.zcs.sdk.listener.OnSearchCardListener cardSearchListener -> g
+    com.zcs.sdk.card.CardReaderManager cardManager -> d
+    int transNo -> f
+    java.util.concurrent.ExecutorService executor -> b
+    com.zcs.sdk.pin.pinpad.PinPadManager pinPadManager -> e
+    1:1:java.util.List com.exzell.androidterminal.core.util.EmvUtils.createAidsFromAsset(android.content.Context):0:0 -> <init>
+    1:1:void <init>(android.content.Context,java.util.concurrent.ExecutorService,com.zcs.sdk.emv.EmvHandler,com.zcs.sdk.card.CardReaderManager,com.zcs.sdk.pin.pinpad.PinPadManager):0 -> <init>
+    2:2:java.util.List com.exzell.androidterminal.core.util.EmvUtils.createCapksFromAsset(android.content.Context):0:0 -> <init>
+    2:2:void <init>(android.content.Context,java.util.concurrent.ExecutorService,com.zcs.sdk.emv.EmvHandler,com.zcs.sdk.card.CardReaderManager,com.zcs.sdk.pin.pinpad.PinPadManager):0 -> <init>
+    3:3:void <init>(android.content.Context,java.util.concurrent.ExecutorService,com.zcs.sdk.emv.EmvHandler,com.zcs.sdk.card.CardReaderManager,com.zcs.sdk.pin.pinpad.PinPadManager):0:0 -> <init>
+    4:4:int com.zcs.sdk.pin.pinpad.PinPadManager.pinPadSetAlgorithmMode(com.zcs.sdk.pin.PinAlgorithmModeEnum):0:0 -> <init>
+    4:4:void <init>(android.content.Context,java.util.concurrent.ExecutorService,com.zcs.sdk.emv.EmvHandler,com.zcs.sdk.card.CardReaderManager,com.zcs.sdk.pin.pinpad.PinPadManager):0 -> <init>
+    5:5:void <init>(android.content.Context,java.util.concurrent.ExecutorService,com.zcs.sdk.emv.EmvHandler,com.zcs.sdk.card.CardReaderManager,com.zcs.sdk.pin.pinpad.PinPadManager):0:0 -> <init>
+    1:1:void com.exzell.androidterminal.hcc.EmvManager.lambda$newTransaction$0(com.exzell.androidterminal.core.core.EmvCallback,java.lang.String,java.lang.String):0:0 -> a
+    1:1:void $r8$lambda$HSvL518gd5eMeitQSqCgnd5Hpk8(com.exzell.androidterminal.hcc.EmvManager,com.exzell.androidterminal.core.core.EmvCallback,java.lang.String,java.lang.String):0 -> a
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+      # {"id":"com.android.tools.r8.synthesized"}
+    2:2:void com.exzell.androidterminal.hcc.EmvManager.lambda$newTransaction$0(com.exzell.androidterminal.core.core.EmvCallback,java.lang.String,java.lang.String):0:0 -> a
+    2:2:void $r8$lambda$HSvL518gd5eMeitQSqCgnd5Hpk8(com.exzell.androidterminal.hcc.EmvManager,com.exzell.androidterminal.core.core.EmvCallback,java.lang.String,java.lang.String):0 -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    3:3:int com.zcs.sdk.pin.pinpad.PinPadManager.pinPadUpDukpt(int,byte[],byte,byte[]):0:0 -> a
+    3:3:void com.exzell.androidterminal.hcc.EmvManager.lambda$newTransaction$0(com.exzell.androidterminal.core.core.EmvCallback,java.lang.String,java.lang.String):0 -> a
+    3:3:void $r8$lambda$HSvL518gd5eMeitQSqCgnd5Hpk8(com.exzell.androidterminal.hcc.EmvManager,com.exzell.androidterminal.core.core.EmvCallback,java.lang.String,java.lang.String):0 -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    4:4:void com.zcs.sdk.card.CardReaderManager.cancelSearchCard():0:0 -> a
+    4:4:void com.exzell.androidterminal.hcc.EmvManager.lambda$newTransaction$0(com.exzell.androidterminal.core.core.EmvCallback,java.lang.String,java.lang.String):0 -> a
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    4:4:void $r8$lambda$HSvL518gd5eMeitQSqCgnd5Hpk8(com.exzell.androidterminal.hcc.EmvManager,com.exzell.androidterminal.core.core.EmvCallback,java.lang.String,java.lang.String):0 -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    5:5:void com.exzell.androidterminal.hcc.EmvManager.lambda$newTransaction$0(com.exzell.androidterminal.core.core.EmvCallback,java.lang.String,java.lang.String):0:0 -> a
+    5:5:void $r8$lambda$HSvL518gd5eMeitQSqCgnd5Hpk8(com.exzell.androidterminal.hcc.EmvManager,com.exzell.androidterminal.core.core.EmvCallback,java.lang.String,java.lang.String):0 -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    6:6:void com.zcs.sdk.card.CardReaderManager.searchCard(com.zcs.sdk.card.CardReaderTypeEnum,int,byte,com.zcs.sdk.listener.OnSearchCardListener):0:0 -> a
+    6:6:void com.zcs.sdk.card.CardReaderManager.searchCard(com.zcs.sdk.card.CardReaderTypeEnum,int,com.zcs.sdk.listener.OnSearchCardListener):0 -> a
+    6:6:void com.exzell.androidterminal.hcc.EmvManager.lambda$newTransaction$0(com.exzell.androidterminal.core.core.EmvCallback,java.lang.String,java.lang.String):0 -> a
+    6:6:void $r8$lambda$HSvL518gd5eMeitQSqCgnd5Hpk8(com.exzell.androidterminal.hcc.EmvManager,com.exzell.androidterminal.core.core.EmvCallback,java.lang.String,java.lang.String):0 -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    com.exzell.androidterminal.core.core.EmvCallback -$$Nest$fgetcallback(com.exzell.androidterminal.hcc.EmvManager) -> b
+      # {"id":"com.android.tools.r8.synthesized"}
+    com.exzell.androidterminal.core.core.EmvConfig -$$Nest$fgetconfig(com.exzell.androidterminal.hcc.EmvManager) -> c
+      # {"id":"com.android.tools.r8.synthesized"}
+    com.exzell.androidterminal.core.model.EmvTransactionData -$$Nest$fgetdata(com.exzell.androidterminal.hcc.EmvManager) -> d
+      # {"id":"com.android.tools.r8.synthesized"}
+    6:11:com.zcs.sdk.emv.OnEmvListener com.exzell.androidterminal.hcc.EmvManager.newEmvCallback(boolean):0:0 -> e
+    6:11:void com.exzell.androidterminal.hcc.EmvManager.beginEmv(com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+    6:11:void -$$Nest$mbeginEmv(com.exzell.androidterminal.hcc.EmvManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+      # {"id":"com.android.tools.r8.synthesized"}
+    12:18:void com.exzell.androidterminal.hcc.EmvManager.beginEmv(com.zcs.sdk.card.CardReaderTypeEnum):0:0 -> e
+    12:18:void -$$Nest$mbeginEmv(com.exzell.androidterminal.hcc.EmvManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+      # {"id":"com.android.tools.r8.synthesized"}
+    19:130:int com.exzell.androidterminal.hcc.EmvProcessor.startLevel2(boolean,com.zcs.sdk.emv.OnEmvListener,com.exzell.androidterminal.core.model.EmvTransactionData):0:0 -> e
+    19:130:void com.exzell.androidterminal.hcc.EmvManager.beginEmv(com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+    19:130:void -$$Nest$mbeginEmv(com.exzell.androidterminal.hcc.EmvManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+      # {"id":"com.android.tools.r8.synthesized"}
+    131:156:void com.exzell.androidterminal.hcc.EmvProcessor.addAids():0:0 -> e
+    131:156:int com.exzell.androidterminal.hcc.EmvProcessor.startLevel2(boolean,com.zcs.sdk.emv.OnEmvListener,com.exzell.androidterminal.core.model.EmvTransactionData):0 -> e
+    131:156:void com.exzell.androidterminal.hcc.EmvManager.beginEmv(com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+    131:156:void -$$Nest$mbeginEmv(com.exzell.androidterminal.hcc.EmvManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+      # {"id":"com.android.tools.r8.synthesized"}
+    157:186:void com.exzell.androidterminal.hcc.EmvProcessor.addCapks():0:0 -> e
+    157:186:int com.exzell.androidterminal.hcc.EmvProcessor.startLevel2(boolean,com.zcs.sdk.emv.OnEmvListener,com.exzell.androidterminal.core.model.EmvTransactionData):0 -> e
+    157:186:void com.exzell.androidterminal.hcc.EmvManager.beginEmv(com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+    157:186:void -$$Nest$mbeginEmv(com.exzell.androidterminal.hcc.EmvManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+      # {"id":"com.android.tools.r8.synthesized"}
+    187:194:int com.exzell.androidterminal.hcc.EmvProcessor.startLevel2(boolean,com.zcs.sdk.emv.OnEmvListener,com.exzell.androidterminal.core.model.EmvTransactionData):0:0 -> e
+    187:194:void com.exzell.androidterminal.hcc.EmvManager.beginEmv(com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+    187:194:void -$$Nest$mbeginEmv(com.exzell.androidterminal.hcc.EmvManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+      # {"id":"com.android.tools.r8.synthesized"}
+    195:294:void com.exzell.androidterminal.hcc.EmvProcessor.putEmvData(com.exzell.androidterminal.core.model.EmvTransactionData):0:0 -> e
+    195:294:int com.exzell.androidterminal.hcc.EmvProcessor.startLevel2(boolean,com.zcs.sdk.emv.OnEmvListener,com.exzell.androidterminal.core.model.EmvTransactionData):0 -> e
+    195:294:void com.exzell.androidterminal.hcc.EmvManager.beginEmv(com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+    195:294:void -$$Nest$mbeginEmv(com.exzell.androidterminal.hcc.EmvManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+      # {"id":"com.android.tools.r8.synthesized"}
+    295:400:java.lang.String com.exzell.androidterminal.core.util.EncryptUtils.encryptTrack2(java.lang.String,java.lang.String,java.lang.String):0:0 -> e
+    295:400:void com.exzell.androidterminal.hcc.EmvProcessor.putEmvData(com.exzell.androidterminal.core.model.EmvTransactionData):0 -> e
+    295:400:int com.exzell.androidterminal.hcc.EmvProcessor.startLevel2(boolean,com.zcs.sdk.emv.OnEmvListener,com.exzell.androidterminal.core.model.EmvTransactionData):0 -> e
+    295:400:void com.exzell.androidterminal.hcc.EmvManager.beginEmv(com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+    295:400:void -$$Nest$mbeginEmv(com.exzell.androidterminal.hcc.EmvManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+      # {"id":"com.android.tools.r8.synthesized"}
+    401:428:byte[] com.exzell.androidterminal.core.util.EncryptUtils.getDataKeyVariant(byte[],byte[]):0:0 -> e
+    401:428:byte[] com.exzell.androidterminal.core.util.EncryptUtils.getDataKey(byte[],byte[]):0 -> e
+    401:428:java.lang.String com.exzell.androidterminal.core.util.EncryptUtils.encryptTrack2(java.lang.String,java.lang.String,java.lang.String):0 -> e
+    401:428:void com.exzell.androidterminal.hcc.EmvProcessor.putEmvData(com.exzell.androidterminal.core.model.EmvTransactionData):0 -> e
+    401:428:int com.exzell.androidterminal.hcc.EmvProcessor.startLevel2(boolean,com.zcs.sdk.emv.OnEmvListener,com.exzell.androidterminal.core.model.EmvTransactionData):0 -> e
+    401:428:void com.exzell.androidterminal.hcc.EmvManager.beginEmv(com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+    401:428:void -$$Nest$mbeginEmv(com.exzell.androidterminal.hcc.EmvManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+      # {"id":"com.android.tools.r8.synthesized"}
+    429:463:byte[] com.exzell.androidterminal.core.util.EncryptUtils.encryptTripleDesECB(byte[],byte[]):0:0 -> e
+    429:463:byte[] com.exzell.androidterminal.core.util.EncryptUtils.getDataKey(byte[],byte[]):0 -> e
+    429:463:java.lang.String com.exzell.androidterminal.core.util.EncryptUtils.encryptTrack2(java.lang.String,java.lang.String,java.lang.String):0 -> e
+    429:463:void com.exzell.androidterminal.hcc.EmvProcessor.putEmvData(com.exzell.androidterminal.core.model.EmvTransactionData):0 -> e
+    429:463:int com.exzell.androidterminal.hcc.EmvProcessor.startLevel2(boolean,com.zcs.sdk.emv.OnEmvListener,com.exzell.androidterminal.core.model.EmvTransactionData):0 -> e
+    429:463:void com.exzell.androidterminal.hcc.EmvManager.beginEmv(com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+    429:463:void -$$Nest$mbeginEmv(com.exzell.androidterminal.hcc.EmvManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+      # {"id":"com.android.tools.r8.synthesized"}
+    464:471:java.lang.String com.exzell.androidterminal.core.util.EncryptUtils.encryptTrack2(java.lang.String,java.lang.String,java.lang.String):0:0 -> e
+    464:471:void com.exzell.androidterminal.hcc.EmvProcessor.putEmvData(com.exzell.androidterminal.core.model.EmvTransactionData):0 -> e
+    464:471:int com.exzell.androidterminal.hcc.EmvProcessor.startLevel2(boolean,com.zcs.sdk.emv.OnEmvListener,com.exzell.androidterminal.core.model.EmvTransactionData):0 -> e
+    464:471:void com.exzell.androidterminal.hcc.EmvManager.beginEmv(com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+    464:471:void -$$Nest$mbeginEmv(com.exzell.androidterminal.hcc.EmvManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+      # {"id":"com.android.tools.r8.synthesized"}
+    472:486:void com.exzell.androidterminal.hcc.EmvProcessor.putEmvData(com.exzell.androidterminal.core.model.EmvTransactionData):0:0 -> e
+    472:486:int com.exzell.androidterminal.hcc.EmvProcessor.startLevel2(boolean,com.zcs.sdk.emv.OnEmvListener,com.exzell.androidterminal.core.model.EmvTransactionData):0 -> e
+    472:486:void com.exzell.androidterminal.hcc.EmvManager.beginEmv(com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+    472:486:void -$$Nest$mbeginEmv(com.exzell.androidterminal.hcc.EmvManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+      # {"id":"com.android.tools.r8.synthesized"}
+    487:517:java.lang.String com.exzell.androidterminal.core.util.StringUtils.getExpDate(java.lang.String):0:0 -> e
+    487:517:void com.exzell.androidterminal.hcc.EmvProcessor.putEmvData(com.exzell.androidterminal.core.model.EmvTransactionData):0 -> e
+    487:517:int com.exzell.androidterminal.hcc.EmvProcessor.startLevel2(boolean,com.zcs.sdk.emv.OnEmvListener,com.exzell.androidterminal.core.model.EmvTransactionData):0 -> e
+    487:517:void com.exzell.androidterminal.hcc.EmvManager.beginEmv(com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+    487:517:void -$$Nest$mbeginEmv(com.exzell.androidterminal.hcc.EmvManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+      # {"id":"com.android.tools.r8.synthesized"}
+    518:521:void com.exzell.androidterminal.hcc.EmvProcessor.putEmvData(com.exzell.androidterminal.core.model.EmvTransactionData):0:0 -> e
+    518:521:int com.exzell.androidterminal.hcc.EmvProcessor.startLevel2(boolean,com.zcs.sdk.emv.OnEmvListener,com.exzell.androidterminal.core.model.EmvTransactionData):0 -> e
+    518:521:void com.exzell.androidterminal.hcc.EmvManager.beginEmv(com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+    518:521:void -$$Nest$mbeginEmv(com.exzell.androidterminal.hcc.EmvManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+      # {"id":"com.android.tools.r8.synthesized"}
+    522:545:java.lang.String com.exzell.androidterminal.core.util.EncryptUtils.encryptTrack2(java.lang.String,java.lang.String,java.lang.String):0:0 -> e
+    522:545:void com.exzell.androidterminal.hcc.EmvProcessor.putEmvData(com.exzell.androidterminal.core.model.EmvTransactionData):0 -> e
+    522:545:int com.exzell.androidterminal.hcc.EmvProcessor.startLevel2(boolean,com.zcs.sdk.emv.OnEmvListener,com.exzell.androidterminal.core.model.EmvTransactionData):0 -> e
+    522:545:void com.exzell.androidterminal.hcc.EmvManager.beginEmv(com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+    522:545:void -$$Nest$mbeginEmv(com.exzell.androidterminal.hcc.EmvManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+      # {"id":"com.android.tools.r8.synthesized"}
+    546:635:void com.exzell.androidterminal.hcc.EmvProcessor.putEmvData(com.exzell.androidterminal.core.model.EmvTransactionData):0:0 -> e
+    546:635:int com.exzell.androidterminal.hcc.EmvProcessor.startLevel2(boolean,com.zcs.sdk.emv.OnEmvListener,com.exzell.androidterminal.core.model.EmvTransactionData):0 -> e
+    546:635:void com.exzell.androidterminal.hcc.EmvManager.beginEmv(com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+    546:635:void -$$Nest$mbeginEmv(com.exzell.androidterminal.hcc.EmvManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+      # {"id":"com.android.tools.r8.synthesized"}
+    636:669:java.lang.String com.exzell.androidterminal.core.util.EmvUtils.hexToAscii(java.lang.String):0:0 -> e
+    636:669:void com.exzell.androidterminal.hcc.EmvProcessor.putEmvData(com.exzell.androidterminal.core.model.EmvTransactionData):0 -> e
+    636:669:int com.exzell.androidterminal.hcc.EmvProcessor.startLevel2(boolean,com.zcs.sdk.emv.OnEmvListener,com.exzell.androidterminal.core.model.EmvTransactionData):0 -> e
+    636:669:void com.exzell.androidterminal.hcc.EmvManager.beginEmv(com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+    636:669:void -$$Nest$mbeginEmv(com.exzell.androidterminal.hcc.EmvManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+      # {"id":"com.android.tools.r8.synthesized"}
+    670:708:void com.exzell.androidterminal.hcc.EmvProcessor.putEmvData(com.exzell.androidterminal.core.model.EmvTransactionData):0:0 -> e
+    670:708:int com.exzell.androidterminal.hcc.EmvProcessor.startLevel2(boolean,com.zcs.sdk.emv.OnEmvListener,com.exzell.androidterminal.core.model.EmvTransactionData):0 -> e
+    670:708:void com.exzell.androidterminal.hcc.EmvManager.beginEmv(com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+    670:708:void -$$Nest$mbeginEmv(com.exzell.androidterminal.hcc.EmvManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+      # {"id":"com.android.tools.r8.synthesized"}
+    709:731:void com.exzell.androidterminal.hcc.EmvManager.beginEmv(com.zcs.sdk.card.CardReaderTypeEnum):0:0 -> e
+    709:731:void -$$Nest$mbeginEmv(com.exzell.androidterminal.hcc.EmvManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> e
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:1:java.lang.String com.exzell.androidterminal.hcc.EmvManager.manuallyEncryptPinblock(byte[],java.lang.String):0:0 -> f
+    1:1:java.lang.String -$$Nest$mmanuallyEncryptPinblock(com.exzell.androidterminal.hcc.EmvManager,byte[],java.lang.String):0 -> f
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+      # {"id":"com.android.tools.r8.synthesized"}
+    2:2:java.lang.String com.exzell.androidterminal.hcc.EmvManager.manuallyEncryptPinblock(byte[],java.lang.String):0:0 -> f
+    2:2:java.lang.String -$$Nest$mmanuallyEncryptPinblock(com.exzell.androidterminal.hcc.EmvManager,byte[],java.lang.String):0 -> f
+      # {"id":"com.android.tools.r8.synthesized"}
+    3:3:java.lang.String com.exzell.androidterminal.core.util.EncryptUtils.xor(java.lang.String,java.lang.String):0:0 -> f
+    3:3:java.lang.String com.exzell.androidterminal.hcc.EmvManager.manuallyEncryptPinblock(byte[],java.lang.String):0 -> f
+    3:3:java.lang.String -$$Nest$mmanuallyEncryptPinblock(com.exzell.androidterminal.hcc.EmvManager,byte[],java.lang.String):0 -> f
+      # {"id":"com.android.tools.r8.synthesized"}
+    4:4:java.lang.String com.exzell.androidterminal.hcc.EmvManager.manuallyEncryptPinblock(byte[],java.lang.String):0:0 -> f
+    4:4:java.lang.String -$$Nest$mmanuallyEncryptPinblock(com.exzell.androidterminal.hcc.EmvManager,byte[],java.lang.String):0 -> f
+      # {"id":"com.android.tools.r8.synthesized"}
+    5:5:java.lang.String com.exzell.androidterminal.core.util.EncryptUtils.encryptDukpt(java.lang.String,java.lang.String,java.lang.String,int):0:0 -> f
+    5:5:java.lang.String com.exzell.androidterminal.hcc.EmvManager.manuallyEncryptPinblock(byte[],java.lang.String):0 -> f
+    5:5:java.lang.String -$$Nest$mmanuallyEncryptPinblock(com.exzell.androidterminal.hcc.EmvManager,byte[],java.lang.String):0 -> f
+      # {"id":"com.android.tools.r8.synthesized"}
+    6:6:byte[] com.exzell.androidterminal.core.util.EncryptUtils.encryptDukpt(byte[],byte[],byte[],int):0:0 -> f
+    6:6:java.lang.String com.exzell.androidterminal.core.util.EncryptUtils.encryptDukpt(java.lang.String,java.lang.String,java.lang.String,int):0 -> f
+    6:6:java.lang.String com.exzell.androidterminal.hcc.EmvManager.manuallyEncryptPinblock(byte[],java.lang.String):0 -> f
+    6:6:java.lang.String -$$Nest$mmanuallyEncryptPinblock(com.exzell.androidterminal.hcc.EmvManager,byte[],java.lang.String):0 -> f
+      # {"id":"com.android.tools.r8.synthesized"}
+    7:7:byte[] com.exzell.androidterminal.core.util.EncryptUtils.getPinKeyVariant(byte[],byte[]):0:0 -> f
+    7:7:byte[] com.exzell.androidterminal.core.util.EncryptUtils.encryptDukpt(byte[],byte[],byte[],int):0 -> f
+    7:7:java.lang.String com.exzell.androidterminal.core.util.EncryptUtils.encryptDukpt(java.lang.String,java.lang.String,java.lang.String,int):0 -> f
+    7:7:java.lang.String com.exzell.androidterminal.hcc.EmvManager.manuallyEncryptPinblock(byte[],java.lang.String):0 -> f
+    7:7:java.lang.String -$$Nest$mmanuallyEncryptPinblock(com.exzell.androidterminal.hcc.EmvManager,byte[],java.lang.String):0 -> f
+      # {"id":"com.android.tools.r8.synthesized"}
+    8:8:byte[] com.exzell.androidterminal.core.util.EncryptUtils.encryptDukpt(byte[],byte[],byte[],int):0:0 -> f
+    8:8:java.lang.String com.exzell.androidterminal.core.util.EncryptUtils.encryptDukpt(java.lang.String,java.lang.String,java.lang.String,int):0 -> f
+    8:8:java.lang.String com.exzell.androidterminal.hcc.EmvManager.manuallyEncryptPinblock(byte[],java.lang.String):0 -> f
+    8:8:java.lang.String -$$Nest$mmanuallyEncryptPinblock(com.exzell.androidterminal.hcc.EmvManager,byte[],java.lang.String):0 -> f
+      # {"id":"com.android.tools.r8.synthesized"}
+    9:9:java.lang.String com.exzell.androidterminal.core.util.EncryptUtils.encryptDukpt(java.lang.String,java.lang.String,java.lang.String,int):0:0 -> f
+    9:9:java.lang.String com.exzell.androidterminal.hcc.EmvManager.manuallyEncryptPinblock(byte[],java.lang.String):0 -> f
+    9:9:java.lang.String -$$Nest$mmanuallyEncryptPinblock(com.exzell.androidterminal.hcc.EmvManager,byte[],java.lang.String):0 -> f
+      # {"id":"com.android.tools.r8.synthesized"}
+    10:10:java.lang.String com.exzell.androidterminal.hcc.EmvManager.manuallyEncryptPinblock(byte[],java.lang.String):0:0 -> f
+    10:10:java.lang.String -$$Nest$mmanuallyEncryptPinblock(com.exzell.androidterminal.hcc.EmvManager,byte[],java.lang.String):0 -> f
+      # {"id":"com.android.tools.r8.synthesized"}
+    2:5:void com.zcs.sdk.card.CardReaderManager.cancelSearchCard():0:0 -> g
+    2:5:void endOperation():0 -> g
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    6:13:void endOperation():0:0 -> g
+    14:18:int com.zcs.sdk.pin.pinpad.PinPadManager.cancelInputPin():0:0 -> g
+    14:18:void endOperation():0 -> g
+    19:21:void endOperation():0:0 -> g
+    22:27:int com.zcs.sdk.pin.pinpad.PinPadManager.closeInputPin():0:0 -> g
+    22:27:void endOperation():0 -> g
+    28:32:void endOperation():0:0 -> g
+    void newTransaction(java.lang.String,java.lang.String,com.exzell.androidterminal.core.core.EmvCallback) -> h
+    7:10:void com.exzell.androidterminal.hcc.EmvProcessor.setBdk(java.lang.String):0:0 -> i
+    7:10:void setConfig(com.exzell.androidterminal.core.core.EmvConfig):0 -> i
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    11:16:void setConfig(com.exzell.androidterminal.core.core.EmvConfig):0:0 -> i
+    17:19:void com.exzell.androidterminal.hcc.EmvProcessor.setField55Tags(int[]):0:0 -> i
+    17:19:void setConfig(com.exzell.androidterminal.core.core.EmvConfig):0 -> i
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+com.exzell.androidterminal.hcc.EmvManager$$ExternalSyntheticLambda0 -> f.a:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    com.exzell.androidterminal.core.core.EmvCallback com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$1$0c895c859897a1bd3a746cdadf8120401fd3078599a5898c3b9478b22f9c40f7$0.f$1 -> c
+    java.lang.String com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$1$0c895c859897a1bd3a746cdadf8120401fd3078599a5898c3b9478b22f9c40f7$0.f$3 -> e
+    int com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$1$0c895c859897a1bd3a746cdadf8120401fd3078599a5898c3b9478b22f9c40f7$0.$r8$classId -> a
+    com.exzell.androidterminal.hcc.EmvManager com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$1$0c895c859897a1bd3a746cdadf8120401fd3078599a5898c3b9478b22f9c40f7$0.f$0 -> b
+    java.lang.String com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$1$0c895c859897a1bd3a746cdadf8120401fd3078599a5898c3b9478b22f9c40f7$0.f$2 -> d
+    0:65535:void com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$1$0c895c859897a1bd3a746cdadf8120401fd3078599a5898c3b9478b22f9c40f7$0.<init>(com.exzell.androidterminal.hcc.EmvManager,com.exzell.androidterminal.core.core.EmvCallback,java.lang.String,java.lang.String):0:0 -> <init>
+    0:65535:void com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$1$0c895c859897a1bd3a746cdadf8120401fd3078599a5898c3b9478b22f9c40f7$0.$r8$init$synthetic(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,int):0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+    37:41:void com.exzell.androidterminal.hcc.PrintManager.lambda$print$0(com.exzell.androidterminal.core.core.IntConsumer,android.graphics.Bitmap,java.lang.Runnable):0:0 -> run
+    37:41:void com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$1$0c895c859897a1bd3a746cdadf8120401fd3078599a5898c3b9478b22f9c40f7$0.run$bridge():0 -> run
+      # {"id":"com.android.tools.r8.synthesized"}
+    42:61:int com.zcs.sdk.Printer.getPrinterStatus():0:0 -> run
+    42:61:void com.exzell.androidterminal.hcc.PrintManager.lambda$print$0(com.exzell.androidterminal.core.core.IntConsumer,android.graphics.Bitmap,java.lang.Runnable):0 -> run
+    42:61:void com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$1$0c895c859897a1bd3a746cdadf8120401fd3078599a5898c3b9478b22f9c40f7$0.run$bridge():0 -> run
+      # {"id":"com.android.tools.r8.synthesized"}
+    62:72:void com.exzell.androidterminal.hcc.PrintManager.lambda$print$0(com.exzell.androidterminal.core.core.IntConsumer,android.graphics.Bitmap,java.lang.Runnable):0:0 -> run
+    62:72:void com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$1$0c895c859897a1bd3a746cdadf8120401fd3078599a5898c3b9478b22f9c40f7$0.run$bridge():0 -> run
+      # {"id":"com.android.tools.r8.synthesized"}
+    73:87:android.graphics.Bitmap com.exzell.androidterminal.hcc.PrintManager.createBlankBitmap(int):0:0 -> run
+    73:87:void com.exzell.androidterminal.hcc.PrintManager.lambda$print$0(com.exzell.androidterminal.core.core.IntConsumer,android.graphics.Bitmap,java.lang.Runnable):0 -> run
+    73:87:void com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$1$0c895c859897a1bd3a746cdadf8120401fd3078599a5898c3b9478b22f9c40f7$0.run$bridge():0 -> run
+      # {"id":"com.android.tools.r8.synthesized"}
+    88:95:void com.exzell.androidterminal.hcc.PrintManager.lambda$print$0(com.exzell.androidterminal.core.core.IntConsumer,android.graphics.Bitmap,java.lang.Runnable):0:0 -> run
+    88:95:void com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$1$0c895c859897a1bd3a746cdadf8120401fd3078599a5898c3b9478b22f9c40f7$0.run$bridge():0 -> run
+      # {"id":"com.android.tools.r8.synthesized"}
+    96:97:android.graphics.Bitmap com.zcs.sdk.Printer.b(int):0:0 -> run
+    96:97:int com.zcs.sdk.Printer.setPrintStart(int,boolean):0 -> run
+    96:97:int com.zcs.sdk.Printer.setPrintStart(boolean):0 -> run
+    96:97:int com.zcs.sdk.Printer.setPrintStart():0 -> run
+    96:97:void com.exzell.androidterminal.hcc.PrintManager.lambda$print$0(com.exzell.androidterminal.core.core.IntConsumer,android.graphics.Bitmap,java.lang.Runnable):0 -> run
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(4)"]}
+    96:97:void com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$1$0c895c859897a1bd3a746cdadf8120401fd3078599a5898c3b9478b22f9c40f7$0.run$bridge():0 -> run
+      # {"id":"com.android.tools.r8.synthesized"}
+    98:176:android.graphics.Bitmap com.zcs.sdk.Printer.b(int):0:0 -> run
+    98:176:int com.zcs.sdk.Printer.setPrintStart(int,boolean):0 -> run
+    98:176:int com.zcs.sdk.Printer.setPrintStart(boolean):0 -> run
+    98:176:int com.zcs.sdk.Printer.setPrintStart():0 -> run
+    98:176:void com.exzell.androidterminal.hcc.PrintManager.lambda$print$0(com.exzell.androidterminal.core.core.IntConsumer,android.graphics.Bitmap,java.lang.Runnable):0 -> run
+    98:176:void com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$1$0c895c859897a1bd3a746cdadf8120401fd3078599a5898c3b9478b22f9c40f7$0.run$bridge():0 -> run
+      # {"id":"com.android.tools.r8.synthesized"}
+    177:187:boolean com.zcs.sdk.util.PowerHelper.isZ91():0:0 -> run
+    177:187:int com.zcs.sdk.Printer.setPrintStart(int,boolean):0 -> run
+    177:187:int com.zcs.sdk.Printer.setPrintStart(boolean):0 -> run
+    177:187:int com.zcs.sdk.Printer.setPrintStart():0 -> run
+    177:187:void com.exzell.androidterminal.hcc.PrintManager.lambda$print$0(com.exzell.androidterminal.core.core.IntConsumer,android.graphics.Bitmap,java.lang.Runnable):0 -> run
+    177:187:void com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$1$0c895c859897a1bd3a746cdadf8120401fd3078599a5898c3b9478b22f9c40f7$0.run$bridge():0 -> run
+      # {"id":"com.android.tools.r8.synthesized"}
+    188:190:boolean com.zcs.sdk.util.PowerHelper.z91mVoltsOff():0:0 -> run
+    188:190:int com.zcs.sdk.Printer.setPrintStart(int,boolean):0 -> run
+    188:190:int com.zcs.sdk.Printer.setPrintStart(boolean):0 -> run
+    188:190:int com.zcs.sdk.Printer.setPrintStart():0 -> run
+    188:190:void com.exzell.androidterminal.hcc.PrintManager.lambda$print$0(com.exzell.androidterminal.core.core.IntConsumer,android.graphics.Bitmap,java.lang.Runnable):0 -> run
+    188:190:void com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$1$0c895c859897a1bd3a746cdadf8120401fd3078599a5898c3b9478b22f9c40f7$0.run$bridge():0 -> run
+      # {"id":"com.android.tools.r8.synthesized"}
+    191:196:int com.zcs.sdk.Printer.setPrintStart(int,boolean):0:0 -> run
+    191:196:int com.zcs.sdk.Printer.setPrintStart(boolean):0 -> run
+    191:196:int com.zcs.sdk.Printer.setPrintStart():0 -> run
+    191:196:void com.exzell.androidterminal.hcc.PrintManager.lambda$print$0(com.exzell.androidterminal.core.core.IntConsumer,android.graphics.Bitmap,java.lang.Runnable):0 -> run
+    191:196:void com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$1$0c895c859897a1bd3a746cdadf8120401fd3078599a5898c3b9478b22f9c40f7$0.run$bridge():0 -> run
+      # {"id":"com.android.tools.r8.synthesized"}
+    197:216:int com.zcs.sdk.Printer.a(android.graphics.Bitmap,byte,boolean):0:0 -> run
+    197:216:int com.zcs.sdk.Printer.setPrintStart(int,boolean):0 -> run
+    197:216:int com.zcs.sdk.Printer.setPrintStart(boolean):0 -> run
+    197:216:int com.zcs.sdk.Printer.setPrintStart():0 -> run
+    197:216:void com.exzell.androidterminal.hcc.PrintManager.lambda$print$0(com.exzell.androidterminal.core.core.IntConsumer,android.graphics.Bitmap,java.lang.Runnable):0 -> run
+    197:216:void com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$1$0c895c859897a1bd3a746cdadf8120401fd3078599a5898c3b9478b22f9c40f7$0.run$bridge():0 -> run
+      # {"id":"com.android.tools.r8.synthesized"}
+    217:251:int com.zcs.sdk.Printer.a(android.graphics.Bitmap,boolean):0:0 -> run
+    217:251:int com.zcs.sdk.Printer.setPrintStart(int,boolean):0 -> run
+    217:251:int com.zcs.sdk.Printer.setPrintStart(boolean):0 -> run
+    217:251:int com.zcs.sdk.Printer.setPrintStart():0 -> run
+    217:251:void com.exzell.androidterminal.hcc.PrintManager.lambda$print$0(com.exzell.androidterminal.core.core.IntConsumer,android.graphics.Bitmap,java.lang.Runnable):0 -> run
+    217:251:void com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$1$0c895c859897a1bd3a746cdadf8120401fd3078599a5898c3b9478b22f9c40f7$0.run$bridge():0 -> run
+      # {"id":"com.android.tools.r8.synthesized"}
+    252:272:int com.zcs.sdk.Printer.b(byte[]):0:0 -> run
+    252:272:int com.zcs.sdk.Printer.a(android.graphics.Bitmap,boolean):0 -> run
+    252:272:int com.zcs.sdk.Printer.setPrintStart(int,boolean):0 -> run
+    252:272:int com.zcs.sdk.Printer.setPrintStart(boolean):0 -> run
+    252:272:int com.zcs.sdk.Printer.setPrintStart():0 -> run
+    252:272:void com.exzell.androidterminal.hcc.PrintManager.lambda$print$0(com.exzell.androidterminal.core.core.IntConsumer,android.graphics.Bitmap,java.lang.Runnable):0 -> run
+    252:272:void com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$1$0c895c859897a1bd3a746cdadf8120401fd3078599a5898c3b9478b22f9c40f7$0.run$bridge():0 -> run
+      # {"id":"com.android.tools.r8.synthesized"}
+    273:281:boolean com.zcs.sdk.util.PowerHelper.isZ91():0:0 -> run
+    273:281:int com.zcs.sdk.Printer.setPrintStart(int,boolean):0 -> run
+    273:281:int com.zcs.sdk.Printer.setPrintStart(boolean):0 -> run
+    273:281:int com.zcs.sdk.Printer.setPrintStart():0 -> run
+    273:281:void com.exzell.androidterminal.hcc.PrintManager.lambda$print$0(com.exzell.androidterminal.core.core.IntConsumer,android.graphics.Bitmap,java.lang.Runnable):0 -> run
+    273:281:void com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$1$0c895c859897a1bd3a746cdadf8120401fd3078599a5898c3b9478b22f9c40f7$0.run$bridge():0 -> run
+      # {"id":"com.android.tools.r8.synthesized"}
+    282:284:boolean com.zcs.sdk.util.PowerHelper.z91mVoltsOn():0:0 -> run
+    282:284:int com.zcs.sdk.Printer.setPrintStart(int,boolean):0 -> run
+    282:284:int com.zcs.sdk.Printer.setPrintStart(boolean):0 -> run
+    282:284:int com.zcs.sdk.Printer.setPrintStart():0 -> run
+    282:284:void com.exzell.androidterminal.hcc.PrintManager.lambda$print$0(com.exzell.androidterminal.core.core.IntConsumer,android.graphics.Bitmap,java.lang.Runnable):0 -> run
+    282:284:void com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$1$0c895c859897a1bd3a746cdadf8120401fd3078599a5898c3b9478b22f9c40f7$0.run$bridge():0 -> run
+      # {"id":"com.android.tools.r8.synthesized"}
+    285:289:int com.zcs.sdk.Printer.setPrintStart(int,boolean):0:0 -> run
+    285:289:int com.zcs.sdk.Printer.setPrintStart(boolean):0 -> run
+    285:289:int com.zcs.sdk.Printer.setPrintStart():0 -> run
+    285:289:void com.exzell.androidterminal.hcc.PrintManager.lambda$print$0(com.exzell.androidterminal.core.core.IntConsumer,android.graphics.Bitmap,java.lang.Runnable):0 -> run
+    285:289:void com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$1$0c895c859897a1bd3a746cdadf8120401fd3078599a5898c3b9478b22f9c40f7$0.run$bridge():0 -> run
+      # {"id":"com.android.tools.r8.synthesized"}
+    290:301:void com.exzell.androidterminal.hcc.PrintManager.lambda$print$0(com.exzell.androidterminal.core.core.IntConsumer,android.graphics.Bitmap,java.lang.Runnable):0:0 -> run
+    290:301:void com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$1$0c895c859897a1bd3a746cdadf8120401fd3078599a5898c3b9478b22f9c40f7$0.run$bridge():0 -> run
+      # {"id":"com.android.tools.r8.synthesized"}
+    302:310:void timber.log.Timber.d(java.lang.String,java.lang.Object[]):0:0 -> run
+    302:310:void com.exzell.androidterminal.hcc.PrintManager.lambda$print$0(com.exzell.androidterminal.core.core.IntConsumer,android.graphics.Bitmap,java.lang.Runnable):0 -> run
+    302:310:void com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$1$0c895c859897a1bd3a746cdadf8120401fd3078599a5898c3b9478b22f9c40f7$0.run$bridge():0 -> run
+      # {"id":"com.android.tools.r8.synthesized"}
+    311:314:void com.exzell.androidterminal.hcc.PrintManager.lambda$print$0(com.exzell.androidterminal.core.core.IntConsumer,android.graphics.Bitmap,java.lang.Runnable):0:0 -> run
+    311:314:void com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$1$0c895c859897a1bd3a746cdadf8120401fd3078599a5898c3b9478b22f9c40f7$0.run$bridge():0 -> run
+      # {"id":"com.android.tools.r8.synthesized"}
+com.exzell.androidterminal.hcc.EmvManager$$ExternalSyntheticLambda1 -> f.b:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    int[] com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$4$e0a625a77e59f804de5a29df57bd379e6c8c2360aaa2d47ca7fef658876f2b55$0.f$2 -> c
+    com.exzell.androidterminal.hcc.EmvManager com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$4$e0a625a77e59f804de5a29df57bd379e6c8c2360aaa2d47ca7fef658876f2b55$0.f$0 -> a
+    boolean com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$4$e0a625a77e59f804de5a29df57bd379e6c8c2360aaa2d47ca7fef658876f2b55$0.f$1 -> b
+    java.util.concurrent.CountDownLatch com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$4$e0a625a77e59f804de5a29df57bd379e6c8c2360aaa2d47ca7fef658876f2b55$0.f$3 -> d
+    void com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$4$e0a625a77e59f804de5a29df57bd379e6c8c2360aaa2d47ca7fef658876f2b55$0.<init>(com.exzell.androidterminal.hcc.EmvManager,boolean,int[],java.util.concurrent.CountDownLatch) -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+    6:37:void com.exzell.androidterminal.hcc.EmvManager.lambda$inputPIN$1(boolean,int[],java.util.concurrent.CountDownLatch):0:0 -> run
+    6:37:void com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$4$e0a625a77e59f804de5a29df57bd379e6c8c2360aaa2d47ca7fef658876f2b55$0.run():0 -> run
+      # {"id":"com.android.tools.r8.synthesized"}
+    38:39:void com.zcs.sdk.pin.pinpad.PinPadManager.inputOnlinePinByDukpt(android.content.Context,byte,byte,int,boolean,java.lang.String,byte,com.zcs.sdk.pin.PinAlgorithmMode,com.zcs.sdk.pin.pinpad.PinPadManager$OnPinPadInputListener,byte[]):0:0 -> run
+    38:39:void com.exzell.androidterminal.hcc.EmvManager.lambda$inputPIN$1(boolean,int[],java.util.concurrent.CountDownLatch):0 -> run
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    38:39:void com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$4$e0a625a77e59f804de5a29df57bd379e6c8c2360aaa2d47ca7fef658876f2b55$0.run():0 -> run
+      # {"id":"com.android.tools.r8.synthesized"}
+    40:130:void com.zcs.sdk.pin.pinpad.PinPadManager.inputOnlinePinByDukpt(android.content.Context,byte,byte,int,boolean,java.lang.String,byte,com.zcs.sdk.pin.PinAlgorithmMode,com.zcs.sdk.pin.pinpad.PinPadManager$OnPinPadInputListener,byte[]):0:0 -> run
+    40:130:void com.exzell.androidterminal.hcc.EmvManager.lambda$inputPIN$1(boolean,int[],java.util.concurrent.CountDownLatch):0 -> run
+    40:130:void com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$4$e0a625a77e59f804de5a29df57bd379e6c8c2360aaa2d47ca7fef658876f2b55$0.run():0 -> run
+      # {"id":"com.android.tools.r8.synthesized"}
+    131:132:void com.zcs.sdk.pin.pinpad.PinPadManager.inputOfflinePin(android.content.Context,byte,byte,int,boolean,com.zcs.sdk.pin.pinpad.PinPadManager$OnPinPadInputListener):0:0 -> run
+    131:132:void com.exzell.androidterminal.hcc.EmvManager.lambda$inputPIN$1(boolean,int[],java.util.concurrent.CountDownLatch):0 -> run
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    131:132:void com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$4$e0a625a77e59f804de5a29df57bd379e6c8c2360aaa2d47ca7fef658876f2b55$0.run():0 -> run
+      # {"id":"com.android.tools.r8.synthesized"}
+    133:201:void com.zcs.sdk.pin.pinpad.PinPadManager.inputOfflinePin(android.content.Context,byte,byte,int,boolean,com.zcs.sdk.pin.pinpad.PinPadManager$OnPinPadInputListener):0:0 -> run
+    133:201:void com.exzell.androidterminal.hcc.EmvManager.lambda$inputPIN$1(boolean,int[],java.util.concurrent.CountDownLatch):0 -> run
+    133:201:void com.exzell.androidterminal.hcc.EmvManager$$InternalSyntheticLambda$4$e0a625a77e59f804de5a29df57bd379e6c8c2360aaa2d47ca7fef658876f2b55$0.run():0 -> run
+      # {"id":"com.android.tools.r8.synthesized"}
+com.exzell.androidterminal.hcc.EmvManager$1 -> f.c$a:
+    com.exzell.androidterminal.hcc.EmvManager this$0 -> a
+    1:3:com.zcs.sdk.card.CardReaderTypeEnum com.zcs.sdk.card.CardInfoEntity.getCardExistslot():0:0 -> a
+    1:3:void onCardInfo(com.zcs.sdk.card.CardInfoEntity):0 -> a
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    4:31:void onCardInfo(com.zcs.sdk.card.CardInfoEntity):0:0 -> a
+    32:40:int com.zcs.sdk.card.ICCard.icCardReset(com.zcs.sdk.card.CardSlotNoEnum):0:0 -> a
+    32:40:void onCardInfo(com.zcs.sdk.card.CardInfoEntity):0 -> a
+    41:75:void onCardInfo(com.zcs.sdk.card.CardInfoEntity):0:0 -> a
+com.exzell.androidterminal.hcc.EmvManager$2 -> f.d:
+    boolean val$isIccard -> a
+    com.exzell.androidterminal.hcc.EmvManager this$0 -> b
+    27:50:byte[] com.zcs.sdk.card.ICCard.icExchangeAPDU(com.zcs.sdk.card.CardSlotNoEnum,byte[]):0:0 -> onExchangeApdu
+    27:50:byte[] onExchangeApdu(byte[]):0 -> onExchangeApdu
+    13:43:int com.exzell.androidterminal.hcc.EmvManager.inputPIN(boolean):0:0 -> onInputPIN
+    13:43:int onInputPIN(byte):0 -> onInputPIN
+com.exzell.androidterminal.hcc.EmvManager$3 -> f.e:
+    com.exzell.androidterminal.hcc.EmvManager this$0 -> d
+    int[] val$inputPINResult -> b
+    boolean val$isOnline -> a
+    java.util.concurrent.CountDownLatch val$pinLatch -> c
+    void onError(int) -> a
+    void onSuccess(byte[]) -> b
+com.exzell.androidterminal.hcc.EmvProcessor -> f.h:
+    java.time.format.DateTimeFormatter localTimeFormatter -> b
+    java.lang.String bdk -> f
+    int[] field55Tags -> g
+    com.zcs.sdk.emv.EmvHandler emvHandler -> c
+    java.util.List capks -> e
+    java.time.format.DateTimeFormatter localDateFormatter -> a
+    java.util.List aids -> d
+com.exzell.androidterminal.hcc.EmvProcessor$$ExternalSyntheticLambda0 -> f.f:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    int com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.$r8$classId -> a
+    0:65535:void com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.<init>():0:0 -> <init>
+    0:65535:void com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.$r8$init$synthetic(int):0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+    java.util.function.Function com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.andThen$bridge(java.util.function.Function) -> andThen
+      # {"id":"com.android.tools.r8.synthesized"}
+    10:14:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0:0 -> apply
+    10:14:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    15:16:java.lang.String com.exzell.androidterminal.core.util.model.EmvAid.getAid():0:0 -> apply
+    15:16:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0 -> apply
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    15:16:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    17:19:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0:0 -> apply
+    17:19:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    20:22:int com.exzell.androidterminal.core.util.model.EmvAid.getSelFlag():0:0 -> apply
+    20:22:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0 -> apply
+    20:22:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    23:25:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0:0 -> apply
+    23:25:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    26:28:int com.exzell.androidterminal.core.util.model.EmvAid.getTargetPer():0:0 -> apply
+    26:28:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0 -> apply
+    26:28:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    29:31:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0:0 -> apply
+    29:31:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    32:34:int com.exzell.androidterminal.core.util.model.EmvAid.getMaxTargetPer():0:0 -> apply
+    32:34:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0 -> apply
+    32:34:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    35:37:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0:0 -> apply
+    35:37:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    38:40:long com.exzell.androidterminal.core.util.model.EmvAid.getFloorLimit():0:0 -> apply
+    38:40:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0 -> apply
+    38:40:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    41:47:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0:0 -> apply
+    41:47:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    48:50:long com.exzell.androidterminal.core.util.model.EmvAid.getThreshold():0:0 -> apply
+    48:50:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0 -> apply
+    48:50:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    51:53:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0:0 -> apply
+    51:53:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    54:55:java.lang.String com.exzell.androidterminal.core.util.model.EmvAid.getTbcDefault():0:0 -> apply
+    54:55:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0 -> apply
+    54:55:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    56:58:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0:0 -> apply
+    56:58:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    59:60:java.lang.String com.exzell.androidterminal.core.util.model.EmvAid.getTacDenial():0:0 -> apply
+    59:60:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0 -> apply
+    59:60:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    61:63:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0:0 -> apply
+    61:63:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    64:65:java.lang.String com.exzell.androidterminal.core.util.model.EmvAid.getTacOnline():0:0 -> apply
+    64:65:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0 -> apply
+    64:65:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    66:68:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0:0 -> apply
+    66:68:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    69:70:java.lang.String com.exzell.androidterminal.core.util.model.EmvAid.getDdol():0:0 -> apply
+    69:70:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0 -> apply
+    69:70:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    71:78:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0:0 -> apply
+    71:78:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    79:80:java.lang.String com.exzell.androidterminal.core.util.model.EmvAid.getVersion():0:0 -> apply
+    79:80:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0 -> apply
+    79:80:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    81:83:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0:0 -> apply
+    81:83:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    84:85:java.lang.String com.exzell.androidterminal.core.util.model.EmvAid.getRdContactlessTransLimit():0:0 -> apply
+    84:85:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0 -> apply
+    84:85:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    86:88:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0:0 -> apply
+    86:88:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    89:90:java.lang.String com.exzell.androidterminal.core.util.model.EmvAid.getRdContactlessFloorLimit():0:0 -> apply
+    89:90:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0 -> apply
+    89:90:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    91:93:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0:0 -> apply
+    91:93:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    94:95:java.lang.String com.exzell.androidterminal.core.util.model.EmvAid.getRdCvmLimit():0:0 -> apply
+    94:95:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0 -> apply
+    94:95:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    96:98:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0:0 -> apply
+    96:98:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    99:100:java.lang.String com.exzell.androidterminal.core.util.model.EmvAid.getEccTTlValue():0:0 -> apply
+    99:100:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0 -> apply
+    99:100:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    101:103:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0:0 -> apply
+    101:103:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    104:105:java.lang.String com.exzell.androidterminal.core.util.model.EmvAid.getAcquirerID():0:0 -> apply
+    104:105:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0 -> apply
+    104:105:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    106:108:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0:0 -> apply
+    106:108:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    109:110:java.lang.String com.exzell.androidterminal.core.util.model.EmvAid.getMerchantCateCode():0:0 -> apply
+    109:110:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0 -> apply
+    109:110:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    111:113:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0:0 -> apply
+    111:113:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    114:115:java.lang.String com.exzell.androidterminal.core.util.model.EmvAid.getMerchantID():0:0 -> apply
+    114:115:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0 -> apply
+    114:115:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    116:118:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0:0 -> apply
+    116:118:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    119:120:java.lang.String com.exzell.androidterminal.core.util.model.EmvAid.getMerchantName():0:0 -> apply
+    119:120:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0 -> apply
+    119:120:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    121:123:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0:0 -> apply
+    121:123:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    124:125:java.lang.String com.exzell.androidterminal.core.util.model.EmvAid.getTerminalID():0:0 -> apply
+    124:125:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0 -> apply
+    124:125:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    126:128:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0:0 -> apply
+    126:128:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    129:130:java.lang.String com.exzell.androidterminal.core.util.model.EmvAid.getTransCurrencyCode():0:0 -> apply
+    129:130:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0 -> apply
+    129:130:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    131:150:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0:0 -> apply
+    131:150:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    151:152:java.lang.String com.exzell.androidterminal.core.util.model.EmvAid.getRiskManagementData():0:0 -> apply
+    151:152:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0 -> apply
+    151:152:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    153:156:com.zcs.sdk.emv.EmvApp com.exzell.androidterminal.hcc.EmvProcessor.lambda$addAids$0(com.exzell.androidterminal.core.util.model.EmvAid):0:0 -> apply
+    153:156:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    157:158:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0:0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    159:163:com.zcs.sdk.emv.EmvCapk com.exzell.androidterminal.hcc.EmvProcessor.lambda$addCapks$1(com.exzell.androidterminal.core.util.model.EmvCapk):0:0 -> apply
+    159:163:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    164:165:java.lang.String com.exzell.androidterminal.core.util.model.EmvCapk.getRid():0:0 -> apply
+    164:165:com.zcs.sdk.emv.EmvCapk com.exzell.androidterminal.hcc.EmvProcessor.lambda$addCapks$1(com.exzell.androidterminal.core.util.model.EmvCapk):0 -> apply
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    164:165:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    166:168:com.zcs.sdk.emv.EmvCapk com.exzell.androidterminal.hcc.EmvProcessor.lambda$addCapks$1(com.exzell.androidterminal.core.util.model.EmvCapk):0:0 -> apply
+    166:168:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    169:171:int com.exzell.androidterminal.core.util.model.EmvCapk.getKeyID():0:0 -> apply
+    169:171:com.zcs.sdk.emv.EmvCapk com.exzell.androidterminal.hcc.EmvProcessor.lambda$addCapks$1(com.exzell.androidterminal.core.util.model.EmvCapk):0 -> apply
+    169:171:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    172:174:com.zcs.sdk.emv.EmvCapk com.exzell.androidterminal.hcc.EmvProcessor.lambda$addCapks$1(com.exzell.androidterminal.core.util.model.EmvCapk):0:0 -> apply
+    172:174:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    175:176:java.lang.String com.exzell.androidterminal.core.util.model.EmvCapk.getModul():0:0 -> apply
+    175:176:com.zcs.sdk.emv.EmvCapk com.exzell.androidterminal.hcc.EmvProcessor.lambda$addCapks$1(com.exzell.androidterminal.core.util.model.EmvCapk):0 -> apply
+    175:176:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    177:179:com.zcs.sdk.emv.EmvCapk com.exzell.androidterminal.hcc.EmvProcessor.lambda$addCapks$1(com.exzell.androidterminal.core.util.model.EmvCapk):0:0 -> apply
+    177:179:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    180:181:java.lang.String com.exzell.androidterminal.core.util.model.EmvCapk.getExponent():0:0 -> apply
+    180:181:com.zcs.sdk.emv.EmvCapk com.exzell.androidterminal.hcc.EmvProcessor.lambda$addCapks$1(com.exzell.androidterminal.core.util.model.EmvCapk):0 -> apply
+    180:181:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    182:184:com.zcs.sdk.emv.EmvCapk com.exzell.androidterminal.hcc.EmvProcessor.lambda$addCapks$1(com.exzell.androidterminal.core.util.model.EmvCapk):0:0 -> apply
+    182:184:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    185:186:java.lang.String com.exzell.androidterminal.core.util.model.EmvCapk.getExpiryDate():0:0 -> apply
+    185:186:com.zcs.sdk.emv.EmvCapk com.exzell.androidterminal.hcc.EmvProcessor.lambda$addCapks$1(com.exzell.androidterminal.core.util.model.EmvCapk):0 -> apply
+    185:186:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    187:189:com.zcs.sdk.emv.EmvCapk com.exzell.androidterminal.hcc.EmvProcessor.lambda$addCapks$1(com.exzell.androidterminal.core.util.model.EmvCapk):0:0 -> apply
+    187:189:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    190:191:java.lang.String com.exzell.androidterminal.core.util.model.EmvCapk.getChecksum():0:0 -> apply
+    190:191:com.zcs.sdk.emv.EmvCapk com.exzell.androidterminal.hcc.EmvProcessor.lambda$addCapks$1(com.exzell.androidterminal.core.util.model.EmvCapk):0 -> apply
+    190:191:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    192:196:com.zcs.sdk.emv.EmvCapk com.exzell.androidterminal.hcc.EmvProcessor.lambda$addCapks$1(com.exzell.androidterminal.core.util.model.EmvCapk):0:0 -> apply
+    192:196:java.lang.Object com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.apply$bridge(java.lang.Object):0 -> apply
+      # {"id":"com.android.tools.r8.synthesized"}
+    java.util.function.Function com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$0.compose$bridge(java.util.function.Function) -> compose
+      # {"id":"com.android.tools.r8.synthesized"}
+com.exzell.androidterminal.hcc.EmvProcessor$$ExternalSyntheticLambda1 -> f.g:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    com.zcs.sdk.emv.EmvHandler com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$1.f$0 -> b
+    int com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$1.$r8$classId -> a
+    0:65535:void com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$1.<init>(com.zcs.sdk.emv.EmvHandler):0:0 -> <init>
+    0:65535:void com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$1.$r8$init$synthetic(com.zcs.sdk.emv.EmvHandler,int):0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+    void com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$1.accept$bridge(java.lang.Object) -> accept
+      # {"id":"com.android.tools.r8.synthesized"}
+    java.util.function.Consumer com.exzell.androidterminal.hcc.EmvProcessor$$InternalSyntheticLambda$5$4dab174cb4b76e98b818bdc20ba1039022ce9029d779e054d4ee0ad1ba906f4e$1.andThen$bridge(java.util.function.Consumer) -> andThen
+      # {"id":"com.android.tools.r8.synthesized"}
+com.exzell.androidterminal.hcc.HccTerminalManager -> com.exzell.androidterminal.hcc.HccTerminalManager:
+    com.exzell.androidterminal.hcc.PrintManager printManager -> c
+    com.zcs.sdk.DriverManager driverManager -> a
+    java.util.concurrent.ExecutorService executors -> d
+    com.exzell.androidterminal.hcc.EmvManager emvManager -> b
+    10:21:boolean com.zcs.sdk.util.PowerHelper.isZ91():0:0 -> checkIsConnected
+    10:21:int com.zcs.sdk.Sys.sysPowerOn():0 -> checkIsConnected
+    10:21:boolean checkIsConnected():0 -> checkIsConnected
+    22:32:boolean com.zcs.sdk.util.PowerHelper.z91mPowerOn():0:0 -> checkIsConnected
+    22:32:int com.zcs.sdk.Sys.sysPowerOn():0 -> checkIsConnected
+    22:32:boolean checkIsConnected():0 -> checkIsConnected
+    33:40:int com.zcs.sdk.Sys.sysPowerOn():0:0 -> checkIsConnected
+    33:40:boolean checkIsConnected():0 -> checkIsConnected
+    41:48:boolean checkIsConnected():0:0 -> checkIsConnected
+    18:22:int com.zcs.sdk.Sys.getPid(java.lang.String[]):0:0 -> getSerialNumber
+    18:22:java.lang.String getSerialNumber():0 -> getSerialNumber
+    23:42:java.lang.String com.zcs.sdk.util.StringUtils.byteToString(byte[]):0:0 -> getSerialNumber
+    23:42:int com.zcs.sdk.Sys.getPid(java.lang.String[]):0 -> getSerialNumber
+    23:42:java.lang.String getSerialNumber():0 -> getSerialNumber
+    10:21:boolean com.zcs.sdk.util.PowerHelper.isZ91():0:0 -> init
+    10:21:int com.zcs.sdk.Sys.sysPowerOn():0 -> init
+    10:21:void init(android.content.Context):0 -> init
+    22:32:boolean com.zcs.sdk.util.PowerHelper.z91mPowerOn():0:0 -> init
+    22:32:int com.zcs.sdk.Sys.sysPowerOn():0 -> init
+    22:32:void init(android.content.Context):0 -> init
+    33:43:int com.zcs.sdk.Sys.sysPowerOn():0:0 -> init
+    33:43:void init(android.content.Context):0 -> init
+    44:117:void init(android.content.Context):0:0 -> init
+    0:65535:void com.exzell.androidterminal.hcc.PrintManager.print(android.graphics.Bitmap,java.lang.Runnable,com.exzell.androidterminal.core.core.IntConsumer):0:0 -> print
+    0:65535:void print(android.graphics.Bitmap,java.lang.Runnable,com.exzell.androidterminal.core.core.IntConsumer):0 -> print
+com.exzell.androidterminal.hcc.PrintManager -> f.i:
+    com.zcs.sdk.Printer printer -> b
+    java.util.concurrent.ExecutorService executor -> a
+com.zcs.base.SmartPosJni -> com.zcs.base.SmartPosJni:
+    4:5:com.zcs.sdk.bluetooth.BluetoothManager com.zcs.sdk.bluetooth.BluetoothManager$a.a():0:0 -> sdkOnBluetoothRecv
+    4:5:com.zcs.sdk.bluetooth.BluetoothManager com.zcs.sdk.bluetooth.BluetoothManager.getInstance():0 -> sdkOnBluetoothRecv
+    4:5:byte[] sdkOnBluetoothRecv(int):0 -> sdkOnBluetoothRecv
+    6:14:byte[] sdkOnBluetoothRecv(int):0:0 -> sdkOnBluetoothRecv
+    7:8:com.zcs.sdk.bluetooth.BluetoothManager com.zcs.sdk.bluetooth.BluetoothManager$a.a():0:0 -> sdkOnBluetoothSend
+    7:8:com.zcs.sdk.bluetooth.BluetoothManager com.zcs.sdk.bluetooth.BluetoothManager.getInstance():0 -> sdkOnBluetoothSend
+    7:8:int sdkOnBluetoothSend(byte[]):0 -> sdkOnBluetoothSend
+    9:17:int sdkOnBluetoothSend(byte[]):0:0 -> sdkOnBluetoothSend
+    6:11:java.lang.String com.zcs.sdk.usb.UsbHandler.recv(int):0:0 -> sdkOnUsbRecv
+    6:11:byte[] sdkOnUsbRecv(int):0 -> sdkOnUsbRecv
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    12:16:java.lang.String com.zcs.sdk.usb.UsbHandler.recv(int):0:0 -> sdkOnUsbRecv
+    12:16:byte[] sdkOnUsbRecv(int):0 -> sdkOnUsbRecv
+    17:26:byte[] sdkOnUsbRecv(int):0:0 -> sdkOnUsbRecv
+    10:11:boolean com.zcs.sdk.usb.UsbHandler.send(java.lang.String):0:0 -> sdkOnUsbSend
+    10:11:int sdkOnUsbSend(byte[]):0 -> sdkOnUsbSend
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    12:69:boolean com.zcs.sdk.usb.UsbHandler.send(java.lang.String):0:0 -> sdkOnUsbSend
+    12:69:int sdkOnUsbSend(byte[]):0 -> sdkOnUsbSend
+    70:74:int sdkOnUsbSend(byte[]):0:0 -> sdkOnUsbSend
+com.zcs.sdk.Beeper -> g.a:
+com.zcs.sdk.ConnectTypeEnum$EnumUnboxingSharedUtility -> g.b:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    int[] $VALUES -> a
+    void g.ConnectTypeEnum$EnumUnboxingSharedUtility.$r8$clinit$synthetic() -> <clinit>
+      # {"id":"com.android.tools.r8.synthesized"}
+    boolean equals(int,int) -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    byte com.zcs.sdk.ConnectTypeEnum$EnumUnboxingLocalUtility.getType(int) -> b
+      # {"id":"com.android.tools.r8.synthesized"}
+    int ordinal(int) -> c
+      # {"id":"com.android.tools.r8.synthesized"}
+    int[] values(int) -> d
+      # {"id":"com.android.tools.r8.synthesized"}
+com.zcs.sdk.DriverManager -> com.zcs.sdk.DriverManager:
+    int $r8$clinit -> d
+    3:30:com.zcs.sdk.Sys com.zcs.sdk.Sys.a(com.zcs.base.SmartPosJni):0:0 -> getBaseSysDevice
+    3:30:com.zcs.sdk.Sys getBaseSysDevice():0 -> getBaseSysDevice
+    0:65535:com.zcs.sdk.Beeper com.zcs.sdk.Beeper.a(com.zcs.base.SmartPosJni):0:0 -> getBeeper
+    0:65535:com.zcs.sdk.Beeper getBeeper():0 -> getBeeper
+    1:18:com.zcs.sdk.bluetooth.emv.BluetoothHandler com.zcs.sdk.bluetooth.emv.BluetoothHandler.getInstance(com.zcs.base.SmartPosJni):0:0 -> getBluetoothHandler
+    1:18:com.zcs.sdk.bluetooth.emv.BluetoothHandler getBluetoothHandler():0 -> getBluetoothHandler
+    19:23:com.zcs.sdk.ConnectTypeEnum com.zcs.sdk.Sys.getConnectType():0:0 -> getBluetoothHandler
+    19:23:com.zcs.sdk.bluetooth.emv.BluetoothHandler com.zcs.sdk.bluetooth.emv.BluetoothHandler.getInstance(com.zcs.base.SmartPosJni):0 -> getBluetoothHandler
+    19:23:com.zcs.sdk.bluetooth.emv.BluetoothHandler getBluetoothHandler():0 -> getBluetoothHandler
+    24:25:com.zcs.sdk.bluetooth.emv.BluetoothHandler com.zcs.sdk.bluetooth.emv.BluetoothHandler.getInstance(com.zcs.base.SmartPosJni):0:0 -> getBluetoothHandler
+    24:25:com.zcs.sdk.bluetooth.emv.BluetoothHandler getBluetoothHandler():0 -> getBluetoothHandler
+    26:27:com.zcs.sdk.bluetooth.BluetoothManager com.zcs.sdk.bluetooth.BluetoothManager$a.a():0:0 -> getBluetoothHandler
+    26:27:com.zcs.sdk.bluetooth.BluetoothManager com.zcs.sdk.bluetooth.BluetoothManager.getInstance():0 -> getBluetoothHandler
+    26:27:com.zcs.sdk.bluetooth.emv.BluetoothHandler com.zcs.sdk.bluetooth.emv.BluetoothHandler.getInstance(com.zcs.base.SmartPosJni):0 -> getBluetoothHandler
+    26:27:com.zcs.sdk.bluetooth.emv.BluetoothHandler getBluetoothHandler():0 -> getBluetoothHandler
+    28:35:com.zcs.sdk.bluetooth.emv.BluetoothHandler com.zcs.sdk.bluetooth.emv.BluetoothHandler.getInstance(com.zcs.base.SmartPosJni):0:0 -> getBluetoothHandler
+    28:35:com.zcs.sdk.bluetooth.emv.BluetoothHandler getBluetoothHandler():0 -> getBluetoothHandler
+    3:30:com.zcs.sdk.card.CardReaderManager com.zcs.sdk.card.CardReaderManager.getInstance(com.zcs.base.SmartPosJni):0:0 -> getCardReadManager
+    3:30:com.zcs.sdk.card.CardReaderManager getCardReadManager():0 -> getCardReadManager
+    0:65535:com.zcs.sdk.exteranl.ExternalCardManager com.zcs.sdk.exteranl.ExternalCardManager.getInstance(com.zcs.base.SmartPosJni):0:0 -> getExternalCardManager
+    0:65535:com.zcs.sdk.exteranl.ExternalCardManager getExternalCardManager():0 -> getExternalCardManager
+    0:65535:com.zcs.sdk.fingerprint.FingerprintManager com.zcs.sdk.fingerprint.FingerprintManager.getInstance(com.zcs.base.SmartPosJni):0:0 -> getFingerprintManager
+    0:65535:com.zcs.sdk.fingerprint.FingerprintManager getFingerprintManager():0 -> getFingerprintManager
+    0:65535:com.zcs.sdk.Led com.zcs.sdk.Led.a(com.zcs.base.SmartPosJni):0:0 -> getLedDriver
+    0:65535:com.zcs.sdk.Led getLedDriver():0 -> getLedDriver
+    3:30:com.zcs.sdk.pin.pinpad.PinPadManager com.zcs.sdk.pin.pinpad.PinPadManager.getInstance(com.zcs.base.SmartPosJni):0:0 -> getPadManager
+    3:30:com.zcs.sdk.pin.pinpad.PinPadManager getPadManager():0 -> getPadManager
+    3:30:com.zcs.sdk.Printer com.zcs.sdk.Printer.a(com.zcs.base.SmartPosJni):0:0 -> getPrinter
+    3:30:com.zcs.sdk.Printer getPrinter():0 -> getPrinter
+    0:65535:com.zcs.sdk.Uart com.zcs.sdk.Uart.a(com.zcs.base.SmartPosJni):0:0 -> getUart
+    0:65535:com.zcs.sdk.Uart getUart():0 -> getUart
+    0:65535:com.zcs.sdk.usb.UsbHandler com.zcs.sdk.usb.UsbHandler.getInstance(com.zcs.base.SmartPosJni):0:0 -> getUsbHandler
+    0:65535:com.zcs.sdk.usb.UsbHandler getUsbHandler():0 -> getUsbHandler
+com.zcs.sdk.Led -> g.c:
+com.zcs.sdk.Printer -> g.d:
+    com.zcs.base.SmartPosJni b -> c
+    java.util.List e -> a
+    com.zcs.sdk.Printer a -> b
+    byte[] b(android.graphics.Bitmap,boolean) -> a
+    3:10:void com.zcs.sdk.Printer.setPrintAppendBitmap(android.graphics.Bitmap,android.text.Layout$Alignment,int):0:0 -> b
+    3:10:void setPrintAppendBitmap(android.graphics.Bitmap,android.text.Layout$Alignment):0 -> b
+    11:37:android.graphics.Bitmap com.zcs.sdk.util.BitmapUtils.scaleBitmap(android.graphics.Bitmap,int):0:0 -> b
+    11:37:void com.zcs.sdk.Printer.setPrintAppendBitmap(android.graphics.Bitmap,android.text.Layout$Alignment,int):0 -> b
+    11:37:void setPrintAppendBitmap(android.graphics.Bitmap,android.text.Layout$Alignment):0 -> b
+    38:107:void com.zcs.sdk.Printer.setPrintAppendBitmap(android.graphics.Bitmap,android.text.Layout$Alignment,int):0:0 -> b
+    38:107:void setPrintAppendBitmap(android.graphics.Bitmap,android.text.Layout$Alignment):0 -> b
+com.zcs.sdk.Sys -> g.e:
+    com.zcs.sdk.ConnectTypeEnum e -> c
+    com.zcs.base.SmartPosJni d -> b
+    com.zcs.sdk.Sys c -> a
+    boolean a -> d
+    1:12:boolean com.zcs.sdk.util.PowerHelper.isZ91():0:0 -> a
+    1:12:int sdkInit():0 -> a
+    13:23:int com.zcs.sdk.Sys.setUartSpeed(int):0:0 -> a
+    13:23:int sdkInit():0 -> a
+    24:27:int com.zcs.sdk.Sys.sdkInitialize(com.zcs.sdk.ConnectTypeEnum):0:0 -> a
+    24:27:int com.zcs.sdk.Sys.sdkInit(com.zcs.sdk.ConnectTypeEnum):0 -> a
+    24:27:int sdkInit():0 -> a
+    28:31:byte com.zcs.sdk.ConnectTypeEnum.getType():0:0 -> a
+    28:31:int com.zcs.sdk.Sys.sdkInitialize(com.zcs.sdk.ConnectTypeEnum):0 -> a
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    28:31:int com.zcs.sdk.Sys.sdkInit(com.zcs.sdk.ConnectTypeEnum):0 -> a
+    28:31:int sdkInit():0 -> a
+    32:37:int com.zcs.sdk.Sys.sdkInitialize(com.zcs.sdk.ConnectTypeEnum):0:0 -> a
+    32:37:int com.zcs.sdk.Sys.sdkInit(com.zcs.sdk.ConnectTypeEnum):0 -> a
+    32:37:int sdkInit():0 -> a
+    38:52:boolean com.zcs.sdk.util.PowerHelper.isZ91():0:0 -> a
+    38:52:int com.zcs.sdk.Sys.sdkInit(com.zcs.sdk.ConnectTypeEnum):0 -> a
+    38:52:int sdkInit():0 -> a
+    53:61:int com.zcs.sdk.Sys.a():0:0 -> a
+    53:61:int com.zcs.sdk.Sys.sdkInit(com.zcs.sdk.ConnectTypeEnum):0 -> a
+    53:61:int sdkInit():0 -> a
+    62:68:int com.zcs.sdk.Sys.setUartSpeed(int):0:0 -> a
+    62:68:int com.zcs.sdk.Sys.a():0 -> a
+    62:68:int com.zcs.sdk.Sys.sdkInit(com.zcs.sdk.ConnectTypeEnum):0 -> a
+    62:68:int sdkInit():0 -> a
+    69:74:int com.zcs.sdk.Sys.getFirmwareVer(java.lang.String[]):0:0 -> a
+    69:74:int com.zcs.sdk.Sys.a():0 -> a
+    69:74:int com.zcs.sdk.Sys.sdkInit(com.zcs.sdk.ConnectTypeEnum):0 -> a
+    69:74:int sdkInit():0 -> a
+    75:88:java.lang.String com.zcs.sdk.util.StringUtils.byteToString(byte[]):0:0 -> a
+    75:88:int com.zcs.sdk.Sys.getFirmwareVer(java.lang.String[]):0 -> a
+    75:88:int com.zcs.sdk.Sys.a():0 -> a
+    75:88:int com.zcs.sdk.Sys.sdkInit(com.zcs.sdk.ConnectTypeEnum):0 -> a
+    75:88:int sdkInit():0 -> a
+    89:100:int com.zcs.sdk.Sys.a():0:0 -> a
+    89:100:int com.zcs.sdk.Sys.sdkInit(com.zcs.sdk.ConnectTypeEnum):0 -> a
+    89:100:int sdkInit():0 -> a
+    101:106:int com.zcs.sdk.Sys.getFirmwareVer(java.lang.String[]):0:0 -> a
+    101:106:int com.zcs.sdk.Sys.sdkInit(com.zcs.sdk.ConnectTypeEnum):0 -> a
+    101:106:int sdkInit():0 -> a
+    107:125:java.lang.String com.zcs.sdk.util.StringUtils.byteToString(byte[]):0:0 -> a
+    107:125:int com.zcs.sdk.Sys.getFirmwareVer(java.lang.String[]):0 -> a
+    107:125:int com.zcs.sdk.Sys.sdkInit(com.zcs.sdk.ConnectTypeEnum):0 -> a
+    107:125:int sdkInit():0 -> a
+    126:134:int com.zcs.sdk.Sys.sdkInit(com.zcs.sdk.ConnectTypeEnum):0:0 -> a
+    126:134:int sdkInit():0 -> a
+com.zcs.sdk.Uart -> g.f:
+com.zcs.sdk.bluetooth.BluetoothManager -> h.a:
+    int $r8$clinit -> a
+    0:65535:void com.zcs.sdk.bluetooth.BluetoothManager.<init>():0:0 -> <init>
+    0:65535:void <init>(com.zcs.sdk.bluetooth.c):0 -> <init>
+com.zcs.sdk.bluetooth.BluetoothManager$a -> h.a$a:
+com.zcs.sdk.bluetooth.emv.BluetoothHandler -> i.a:
+com.zcs.sdk.card.CardInfoEntity -> j.a:
+    com.zcs.sdk.card.CardReaderTypeEnum cardExistslot -> a
+com.zcs.sdk.card.CardReaderManager -> j.b:
+    com.zcs.sdk.card.CardReaderManager e -> f
+    com.zcs.sdk.card.MagCard d -> e
+    com.zcs.sdk.card.ICCard b -> c
+    com.zcs.sdk.card.RfCard c -> d
+    com.zcs.base.SmartPosJni f -> g
+    boolean a -> b
+    java.util.concurrent.ExecutorService g -> a
+    1:5:com.zcs.sdk.ConnectTypeEnum com.zcs.sdk.Sys.getConnectType():0:0 -> a
+    1:5:void closeCard():0 -> a
+    6:9:void closeCard():0:0 -> a
+    10:14:int com.zcs.sdk.card.ICCard.icCardPowerDown(com.zcs.sdk.card.CardSlotNoEnum):0:0 -> a
+    10:14:void closeCard():0 -> a
+    15:19:void closeCard():0:0 -> a
+    20:25:int com.zcs.sdk.card.ICCard.icCardPowerDown(com.zcs.sdk.card.CardSlotNoEnum):0:0 -> a
+    20:25:void closeCard():0 -> a
+    26:29:void closeCard():0:0 -> a
+    30:34:void com.zcs.sdk.card.MagCard.magCardClose():0:0 -> a
+    30:34:void closeCard():0 -> a
+    35:38:void closeCard():0:0 -> a
+    39:43:int com.zcs.sdk.card.RfCard.rfCardPowerDown():0:0 -> a
+    39:43:void closeCard():0 -> a
+    44:47:void closeCard():0:0 -> a
+    48:54:int com.zcs.sdk.card.ICCard.icCardPowerDown(com.zcs.sdk.card.CardSlotNoEnum):0:0 -> a
+    48:54:void closeCard():0 -> a
+    3:30:com.zcs.sdk.card.ICCard com.zcs.sdk.card.ICCard.a(com.zcs.base.SmartPosJni):0:0 -> b
+    3:30:com.zcs.sdk.card.ICCard getICCard():0 -> b
+    3:30:com.zcs.sdk.card.MagCard com.zcs.sdk.card.MagCard.a(com.zcs.base.SmartPosJni):0:0 -> c
+    3:30:com.zcs.sdk.card.MagCard getMAGCard():0 -> c
+com.zcs.sdk.card.ICCard -> j.c:
+    com.zcs.base.SmartPosJni b -> e
+    com.zcs.sdk.card.ICCard a -> d
+    boolean c -> a
+    boolean d -> b
+    boolean e -> c
+com.zcs.sdk.card.MagCard -> j.d:
+    com.zcs.base.SmartPosJni b -> c
+    boolean c -> a
+    com.zcs.sdk.card.MagCard a -> b
+com.zcs.sdk.card.RfCard -> j.e:
+    com.zcs.base.SmartPosJni b -> c
+    com.zcs.sdk.card.RfCard a -> b
+    boolean c -> a
+com.zcs.sdk.card.a -> j.f:
+    23:24:com.zcs.sdk.card.RfCard com.zcs.sdk.card.CardReaderManager.getRFCard():0:0 -> run
+    23:24:void run():0 -> run
+    25:53:com.zcs.sdk.card.RfCard com.zcs.sdk.card.RfCard.a(com.zcs.base.SmartPosJni):0:0 -> run
+    25:53:com.zcs.sdk.card.RfCard com.zcs.sdk.card.CardReaderManager.getRFCard():0 -> run
+    25:53:void run():0 -> run
+    54:70:void run():0:0 -> run
+    71:73:void com.zcs.sdk.card.CardReaderManager.a(com.zcs.sdk.card.CardReaderTypeEnum):0:0 -> run
+    71:73:void com.zcs.sdk.card.CardReaderManager.a(com.zcs.sdk.card.CardReaderManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> run
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    71:73:void run():0 -> run
+    74:75:void com.zcs.sdk.card.ICCard.b(boolean):0:0 -> run
+    74:75:void com.zcs.sdk.card.CardReaderManager.a(com.zcs.sdk.card.CardReaderTypeEnum):0 -> run
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    74:75:void com.zcs.sdk.card.CardReaderManager.a(com.zcs.sdk.card.CardReaderManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> run
+    74:75:void run():0 -> run
+    76:77:void com.zcs.sdk.card.ICCard.c(boolean):0:0 -> run
+    76:77:void com.zcs.sdk.card.CardReaderManager.a(com.zcs.sdk.card.CardReaderTypeEnum):0 -> run
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    76:77:void com.zcs.sdk.card.CardReaderManager.a(com.zcs.sdk.card.CardReaderManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> run
+    76:77:void run():0 -> run
+    78:112:void com.zcs.sdk.card.CardReaderManager.a(com.zcs.sdk.card.CardReaderTypeEnum):0:0 -> run
+    78:112:void com.zcs.sdk.card.CardReaderManager.a(com.zcs.sdk.card.CardReaderManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> run
+    78:112:void run():0 -> run
+    113:115:void com.zcs.sdk.card.ICCard.c(boolean):0:0 -> run
+    113:115:void com.zcs.sdk.card.CardReaderManager.a(com.zcs.sdk.card.CardReaderTypeEnum):0 -> run
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    113:115:void com.zcs.sdk.card.CardReaderManager.a(com.zcs.sdk.card.CardReaderManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> run
+    113:115:void run():0 -> run
+    116:117:void com.zcs.sdk.card.CardReaderManager.a(com.zcs.sdk.card.CardReaderTypeEnum):0:0 -> run
+    116:117:void com.zcs.sdk.card.CardReaderManager.a(com.zcs.sdk.card.CardReaderManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> run
+    116:117:void run():0 -> run
+    118:121:void com.zcs.sdk.card.ICCard.b(boolean):0:0 -> run
+    118:121:void com.zcs.sdk.card.CardReaderManager.a(com.zcs.sdk.card.CardReaderTypeEnum):0 -> run
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    118:121:void com.zcs.sdk.card.CardReaderManager.a(com.zcs.sdk.card.CardReaderManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> run
+    118:121:void run():0 -> run
+    122:123:void com.zcs.sdk.card.CardReaderManager.a(com.zcs.sdk.card.CardReaderTypeEnum):0:0 -> run
+    122:123:void com.zcs.sdk.card.CardReaderManager.a(com.zcs.sdk.card.CardReaderManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> run
+    122:123:void run():0 -> run
+    124:125:void com.zcs.sdk.card.MagCard.a(boolean):0:0 -> run
+    124:125:void com.zcs.sdk.card.CardReaderManager.a(com.zcs.sdk.card.CardReaderTypeEnum):0 -> run
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    124:125:void com.zcs.sdk.card.CardReaderManager.a(com.zcs.sdk.card.CardReaderManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> run
+    124:125:void run():0 -> run
+    126:127:void com.zcs.sdk.card.CardReaderManager.a(com.zcs.sdk.card.CardReaderTypeEnum):0:0 -> run
+    126:127:void com.zcs.sdk.card.CardReaderManager.a(com.zcs.sdk.card.CardReaderManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> run
+    126:127:void run():0 -> run
+    128:129:void com.zcs.sdk.card.ICCard.a(boolean):0:0 -> run
+    128:129:void com.zcs.sdk.card.CardReaderManager.a(com.zcs.sdk.card.CardReaderTypeEnum):0 -> run
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    128:129:void com.zcs.sdk.card.CardReaderManager.a(com.zcs.sdk.card.CardReaderManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> run
+    128:129:void run():0 -> run
+    130:131:void com.zcs.sdk.card.CardReaderManager.a(com.zcs.sdk.card.CardReaderTypeEnum):0:0 -> run
+    130:131:void com.zcs.sdk.card.CardReaderManager.a(com.zcs.sdk.card.CardReaderManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> run
+    130:131:void run():0 -> run
+    132:133:void com.zcs.sdk.card.RfCard.a(boolean):0:0 -> run
+    132:133:void com.zcs.sdk.card.CardReaderManager.a(com.zcs.sdk.card.CardReaderTypeEnum):0 -> run
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    132:133:void com.zcs.sdk.card.CardReaderManager.a(com.zcs.sdk.card.CardReaderManager,com.zcs.sdk.card.CardReaderTypeEnum):0 -> run
+    132:133:void run():0 -> run
+    134:162:void run():0:0 -> run
+    163:167:int com.zcs.sdk.card.MagCard.magClearData():0:0 -> run
+    163:167:void run():0 -> run
+    168:179:void run():0:0 -> run
+    180:197:int com.zcs.sdk.card.MagCard.magCardOpen():0:0 -> run
+    180:197:void run():0 -> run
+    198:229:void run():0:0 -> run
+    230:231:void com.exzell.androidterminal.hcc.EmvManager$1.onError(int):0:0 -> run
+    230:231:void run():0 -> run
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    232:265:void com.exzell.androidterminal.hcc.EmvManager$1.onError(int):0:0 -> run
+    232:265:void run():0 -> run
+    266:282:void run():0:0 -> run
+    283:288:int com.zcs.sdk.card.RfCard.a(byte,byte[],byte[],byte[],byte[],byte[]):0:0 -> run
+    283:288:void run():0 -> run
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    289:328:int com.zcs.sdk.card.RfCard.a(byte,byte[],byte[],byte[],byte[],byte[]):0:0 -> run
+    289:328:void run():0 -> run
+    329:332:com.zcs.sdk.ConnectTypeEnum com.zcs.sdk.Sys.getConnectType():0:0 -> run
+    329:332:void run():0 -> run
+    333:339:void run():0:0 -> run
+    340:347:int com.zcs.sdk.card.ICCard.getIcCardStatus(com.zcs.sdk.card.CardSlotNoEnum):0:0 -> run
+    340:347:void run():0 -> run
+    348:351:void run():0:0 -> run
+    352:356:void com.zcs.sdk.card.CardInfoEntity.setCardExistslot(com.zcs.sdk.card.CardReaderTypeEnum):0:0 -> run
+    352:356:void run():0 -> run
+    357:366:void run():0:0 -> run
+    367:370:void com.zcs.sdk.card.CardInfoEntity.setCardExistslot(com.zcs.sdk.card.CardReaderTypeEnum):0:0 -> run
+    367:370:void run():0 -> run
+    371:409:void run():0:0 -> run
+    410:411:void com.exzell.androidterminal.hcc.EmvManager$1.onError(int):0:0 -> run
+    410:411:void run():0 -> run
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    412:429:void com.exzell.androidterminal.hcc.EmvManager$1.onError(int):0:0 -> run
+    412:429:void run():0 -> run
+    430:439:void run():0:0 -> run
+    440:443:int com.zcs.sdk.card.ICCard.a():0:0 -> run
+    440:443:void run():0 -> run
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    444:457:int com.zcs.sdk.card.ICCard.a():0:0 -> run
+    444:457:void run():0 -> run
+    458:471:void run():0:0 -> run
+    472:475:int com.zcs.sdk.card.MagCard.a():0:0 -> run
+    472:475:void run():0 -> run
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    476:486:int com.zcs.sdk.card.MagCard.a():0:0 -> run
+    476:486:void run():0 -> run
+    487:490:void run():0:0 -> run
+    491:493:void com.zcs.sdk.card.CardInfoEntity.setCardExistslot(com.zcs.sdk.card.CardReaderTypeEnum):0:0 -> run
+    491:493:void run():0 -> run
+    494:502:void run():0:0 -> run
+    503:506:int com.zcs.sdk.card.ICCard.b():0:0 -> run
+    503:506:void run():0 -> run
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    507:521:int com.zcs.sdk.card.ICCard.b():0:0 -> run
+    507:521:void run():0 -> run
+    522:530:void run():0:0 -> run
+    531:535:int com.zcs.sdk.card.ICCard.c():0:0 -> run
+    531:535:void run():0 -> run
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    536:543:int com.zcs.sdk.card.ICCard.c():0:0 -> run
+    536:543:void run():0 -> run
+    544:547:void run():0:0 -> run
+    548:556:void com.zcs.sdk.card.CardInfoEntity.setCardExistslot(com.zcs.sdk.card.CardReaderTypeEnum):0:0 -> run
+    548:556:void run():0 -> run
+com.zcs.sdk.card.c -> j.g:
+com.zcs.sdk.exteranl.ExternalCardManager -> k.a:
+com.zcs.sdk.fingerprint.FingerprintManager -> l.a:
+    com.zcs.sdk.fingerprint.FingerprintManager b -> a
+com.zcs.sdk.fingerprint.b -> l.b:
+    com.zcs.sdk.fingerprint.b c -> a
+com.zcs.sdk.listener.OnSearchCardListener -> m.a:
+com.zcs.sdk.pin.pinpad.PinPadKeyBoard -> com.zcs.sdk.pin.pinpad.a:
+    com.zcs.sdk.pin.pinpad.PinPadKeyBoard$OnKeyBoardClickLitener a -> i
+    android.graphics.Paint h -> e
+    android.graphics.Paint g -> d
+    int k -> h
+    android.graphics.Paint f -> c
+    android.graphics.Paint e -> b
+    int i -> f
+    android.graphics.Paint d -> a
+    int j -> g
+    byte[] b -> j
+    android.os.Handler c -> k
+    40:383:int a(float,float):0:0 -> onTouchEvent
+    40:383:boolean onTouchEvent(android.view.MotionEvent):0 -> onTouchEvent
+    384:389:boolean onTouchEvent(android.view.MotionEvent):0:0 -> onTouchEvent
+com.zcs.sdk.pin.pinpad.PinPadKeyBoard$OnKeyBoardClickLitener -> com.zcs.sdk.pin.pinpad.a$a:
+com.zcs.sdk.pin.pinpad.PinPadLayoutView -> o.a:
+    android.graphics.Paint b -> a
+    int f -> d
+    int d -> b
+    int e -> c
+    3:22:void com.zcs.sdk.pin.pinpad.PinPadLayoutView.<init>(android.content.Context,android.util.AttributeSet,int):0:0 -> <init>
+    3:22:void com.zcs.sdk.pin.pinpad.PinPadLayoutView.<init>(android.content.Context,android.util.AttributeSet):0 -> <init>
+    3:22:void <init>(android.content.Context):0 -> <init>
+    23:35:void com.zcs.sdk.pin.pinpad.PinPadLayoutView.a():0:0 -> <init>
+    23:35:void com.zcs.sdk.pin.pinpad.PinPadLayoutView.<init>(android.content.Context,android.util.AttributeSet,int):0 -> <init>
+    23:35:void com.zcs.sdk.pin.pinpad.PinPadLayoutView.<init>(android.content.Context,android.util.AttributeSet):0 -> <init>
+    23:35:void <init>(android.content.Context):0 -> <init>
+    5:93:void com.zcs.sdk.pin.pinpad.PinPadLayoutView.a(android.graphics.Canvas):0:0 -> onDraw
+    5:93:void onDraw(android.graphics.Canvas):0 -> onDraw
+com.zcs.sdk.pin.pinpad.PinPadManager -> com.zcs.sdk.pin.pinpad.b:
+    java.lang.String n -> i
+    com.zcs.sdk.pin.pinpad.PinKeyboardViewModeEnum k -> p
+    int i -> f
+    java.lang.String d -> o
+    java.lang.String c -> n
+    byte g -> d
+    byte f -> c
+    byte h -> e
+    byte[] b -> a
+    byte p -> k
+    com.zcs.sdk.pin.pinpad.PinPadManager$a m -> h
+    com.zcs.sdk.pin.pinpad.PinPadManager a -> l
+    com.zcs.base.SmartPosJni q -> m
+    com.zcs.sdk.pin.PinAlgorithmMode o -> j
+    boolean e -> b
+    com.zcs.sdk.pin.pinpad.PinPadManager$OnPinPadInputListener j -> g
+com.zcs.sdk.pin.pinpad.PinPadManager$OnPinPadInputListener -> com.zcs.sdk.pin.pinpad.b$a:
+com.zcs.sdk.pin.pinpad.PinPadManager$a -> com.zcs.sdk.pin.pinpad.b$b:
+    void a(int) -> b
+com.zcs.sdk.pin.pinpad.PinPadPasswordActivity -> com.zcs.sdk.pin.pinpad.PinPadPasswordActivity:
+    java.util.Timer d -> f
+    com.zcs.sdk.pin.pinpad.PinPadManager e -> g
+    com.zcs.sdk.pin.pinpad.PinPadKeyBoard f -> a
+    java.lang.StringBuffer c -> e
+    android.widget.TextView a -> c
+    com.zcs.sdk.pin.pinpad.a g -> b
+    byte[] b -> d
+    432:434:void com.zcs.sdk.pin.pinpad.PinPadKeyBoard.a(com.zcs.sdk.pin.pinpad.PinPadKeyBoard$OnKeyBoardClickLitener):0:0 -> onCreate
+    432:434:void onCreate(android.os.Bundle):0 -> onCreate
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+com.zcs.sdk.pin.pinpad.a -> o.b:
+    int g -> f
+    byte h -> g
+    3:35:void com.zcs.sdk.pin.pinpad.a.<init>(android.content.Context,android.util.AttributeSet,int):0:0 -> <init>
+    3:35:void com.zcs.sdk.pin.pinpad.a.<init>(android.content.Context,android.util.AttributeSet):0 -> <init>
+    3:35:void <init>(android.content.Context,byte):0 -> <init>
+    36:50:void com.zcs.sdk.pin.pinpad.a.b():0:0 -> <init>
+    36:50:void com.zcs.sdk.pin.pinpad.a.<init>(android.content.Context,android.util.AttributeSet,int):0 -> <init>
+    36:50:void com.zcs.sdk.pin.pinpad.a.<init>(android.content.Context,android.util.AttributeSet):0 -> <init>
+    36:50:void <init>(android.content.Context,byte):0 -> <init>
+    51:53:void <init>(android.content.Context,byte):0:0 -> <init>
+    4:84:void com.zcs.sdk.pin.pinpad.a.a(android.graphics.Canvas):0:0 -> onDraw
+    4:84:void onDraw(android.graphics.Canvas):0 -> onDraw
+    85:128:void com.zcs.sdk.pin.pinpad.a.b(android.graphics.Canvas):0:0 -> onDraw
+    85:128:void onDraw(android.graphics.Canvas):0 -> onDraw
+    129:167:void com.zcs.sdk.pin.pinpad.a.a(java.lang.StringBuffer,android.graphics.Canvas):0:0 -> onDraw
+    129:167:void onDraw(android.graphics.Canvas):0 -> onDraw
+com.zcs.sdk.pin.pinpad.b -> com.zcs.sdk.pin.pinpad.c:
+    22:27:void com.zcs.sdk.pin.pinpad.g.getNumber(int):0:0 -> handleMessage
+    22:27:void handleMessage(android.os.Message):0 -> handleMessage
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    28:56:void com.zcs.sdk.pin.pinpad.g.getNumber(int):0:0 -> handleMessage
+    28:56:void handleMessage(android.os.Message):0 -> handleMessage
+    57:58:com.zcs.sdk.pin.pinpad.a com.zcs.sdk.pin.pinpad.PinPadPasswordActivity.a(com.zcs.sdk.pin.pinpad.PinPadPasswordActivity):0:0 -> handleMessage
+    57:58:void com.zcs.sdk.pin.pinpad.g.getNumber(int):0 -> handleMessage
+    57:58:void handleMessage(android.os.Message):0 -> handleMessage
+    59:60:java.lang.String com.zcs.sdk.pin.pinpad.a.a():0:0 -> handleMessage
+    59:60:void com.zcs.sdk.pin.pinpad.g.getNumber(int):0 -> handleMessage
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    59:60:void handleMessage(android.os.Message):0 -> handleMessage
+    61:65:java.lang.String com.zcs.sdk.pin.pinpad.a.a():0:0 -> handleMessage
+    61:65:void com.zcs.sdk.pin.pinpad.g.getNumber(int):0 -> handleMessage
+    61:65:void handleMessage(android.os.Message):0 -> handleMessage
+    66:219:void com.zcs.sdk.pin.pinpad.g.getNumber(int):0:0 -> handleMessage
+    66:219:void handleMessage(android.os.Message):0 -> handleMessage
+    220:221:com.zcs.sdk.pin.pinpad.a com.zcs.sdk.pin.pinpad.PinPadPasswordActivity.a(com.zcs.sdk.pin.pinpad.PinPadPasswordActivity):0:0 -> handleMessage
+    220:221:void com.zcs.sdk.pin.pinpad.g.getNumber(int):0 -> handleMessage
+    220:221:void handleMessage(android.os.Message):0 -> handleMessage
+    222:225:void com.zcs.sdk.pin.pinpad.a.a(int):0:0 -> handleMessage
+    222:225:void com.zcs.sdk.pin.pinpad.g.getNumber(int):0 -> handleMessage
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    222:225:void handleMessage(android.os.Message):0 -> handleMessage
+    226:260:void com.zcs.sdk.pin.pinpad.a.a(int):0:0 -> handleMessage
+    226:260:void com.zcs.sdk.pin.pinpad.g.getNumber(int):0 -> handleMessage
+    226:260:void handleMessage(android.os.Message):0 -> handleMessage
+    261:339:void com.zcs.sdk.pin.pinpad.g.getNumber(int):0:0 -> handleMessage
+    261:339:void handleMessage(android.os.Message):0 -> handleMessage
+    340:343:int com.zcs.sdk.pin.pinpad.PinPadKeyBoard.a(com.zcs.sdk.pin.pinpad.PinPadKeyBoard,int):0:0 -> handleMessage
+    340:343:void handleMessage(android.os.Message):0 -> handleMessage
+    344:347:void handleMessage(android.os.Message):0:0 -> handleMessage
+com.zcs.sdk.pin.pinpad.d -> com.zcs.sdk.pin.pinpad.d:
+    4:5:com.zcs.base.SmartPosJni com.zcs.sdk.pin.pinpad.PinPadManager.a():0:0 -> a
+    4:5:void a(byte[]):0 -> a
+    6:46:void a(byte[]):0:0 -> a
+    47:48:com.zcs.base.SmartPosJni com.zcs.sdk.pin.pinpad.PinPadManager.a():0:0 -> a
+    47:48:void a(byte[]):0 -> a
+    49:52:void a(byte[]):0:0 -> a
+    53:57:byte com.zcs.sdk.pin.PinAlgorithmMode.getModeType():0:0 -> a
+    53:57:void a(byte[]):0 -> a
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    58:117:void a(byte[]):0:0 -> a
+    void a(int) -> b
+com.zcs.sdk.pin.pinpad.e -> com.zcs.sdk.pin.pinpad.e:
+    void a(int) -> b
+com.zcs.sdk.usb.UsbHandler -> p.a:
+    com.zcs.sdk.usb.UsbHandler y -> d
+    java.lang.String t -> b
+    int A -> c
+    int n -> a
+    com.zcs.sdk.usb.UsbHandler getInstance() -> a
+com.zcs.sdk.usb.a -> p.b:
+    35:41:android.hardware.usb.UsbDevice com.zcs.sdk.usb.UsbHandler.a(com.zcs.sdk.usb.UsbHandler,android.hardware.usb.UsbDevice):0:0 -> onReceive
+    35:41:void onReceive(android.content.Context,android.content.Intent):0 -> onReceive
+    42:48:void onReceive(android.content.Context,android.content.Intent):0:0 -> onReceive
+    49:51:void com.zcs.sdk.usb.UsbHandler.a(java.lang.String):0:0 -> onReceive
+    49:51:void onReceive(android.content.Context,android.content.Intent):0 -> onReceive
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    52:53:void onReceive(android.content.Context,android.content.Intent):0:0 -> onReceive
+    54:60:android.hardware.usb.UsbDevice com.zcs.sdk.usb.UsbHandler.a(com.zcs.sdk.usb.UsbHandler,android.hardware.usb.UsbDevice):0:0 -> onReceive
+    54:60:void onReceive(android.content.Context,android.content.Intent):0 -> onReceive
+    61:74:void onReceive(android.content.Context,android.content.Intent):0:0 -> onReceive
+kotlin.jvm.internal.DefaultConstructorMarker -> r.a:
+kotlin.jvm.internal.Intrinsics -> r.b:
+    boolean areEqual(java.lang.Object,java.lang.Object) -> a
+    3:4:void kotlin.jvm.internal.Intrinsics.throwParameterIsNullNPE(java.lang.String):0:0 -> b
+    3:4:void checkNotNullParameter(java.lang.Object,java.lang.String):0 -> b
+    5:90:java.lang.String kotlin.jvm.internal.Intrinsics.createParameterIsNullExceptionMessage(java.lang.String):0:0 -> b
+    5:90:void kotlin.jvm.internal.Intrinsics.throwParameterIsNullNPE(java.lang.String):0 -> b
+    5:90:void checkNotNullParameter(java.lang.Object,java.lang.String):0 -> b
+    91:93:void kotlin.jvm.internal.Intrinsics.throwParameterIsNullNPE(java.lang.String):0:0 -> b
+    91:93:void checkNotNullParameter(java.lang.Object,java.lang.String):0 -> b
+    94:97:java.lang.Throwable kotlin.jvm.internal.Intrinsics.sanitizeStackTrace(java.lang.Throwable):0:0 -> b
+    94:97:void kotlin.jvm.internal.Intrinsics.throwParameterIsNullNPE(java.lang.String):0 -> b
+    94:97:void checkNotNullParameter(java.lang.Object,java.lang.String):0 -> b
+    98:132:java.lang.Throwable kotlin.jvm.internal.Intrinsics.sanitizeStackTrace(java.lang.Throwable,java.lang.String):0:0 -> b
+    98:132:java.lang.Throwable kotlin.jvm.internal.Intrinsics.sanitizeStackTrace(java.lang.Throwable):0 -> b
+    98:132:void kotlin.jvm.internal.Intrinsics.throwParameterIsNullNPE(java.lang.String):0 -> b
+    98:132:void checkNotNullParameter(java.lang.Object,java.lang.String):0 -> b
+    133:134:void kotlin.jvm.internal.Intrinsics.throwParameterIsNullNPE(java.lang.String):0:0 -> b
+    133:134:void checkNotNullParameter(java.lang.Object,java.lang.String):0 -> b
+timber.log.Timber -> s.a:
+    timber.log.Timber$Tree TREE_OF_SOULS -> b
+    timber.log.Timber$Tree[] forestAsArray -> a
+timber.log.Timber$1 -> s.a$a:
+    void d(java.lang.String,java.lang.Object[]) -> a
+timber.log.Timber$Tree -> s.a$b:
+    void d(java.lang.String,java.lang.Object[]) -> a
